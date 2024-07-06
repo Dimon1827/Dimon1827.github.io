@@ -2,3 +2,18 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/fonts";
+@import "./common/global";
+@import "./common/visually-hidden";
+@import "./common/page.scss";
+@import "./common/container";
+@import "./common/hero";
+@import "./common/button.scss";
+@import "./common/title.scss";
+@import "./common/about.scss";
+@import "./common/price.scss";
+
+
+

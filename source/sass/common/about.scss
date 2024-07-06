@@ -1,0 +1,33 @@
+.about {
+  padding: 40px 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 36px;
+    font-weight: 300;
+    color: $base-dark-blue;
+  }
+}
+
+.about__title {
+  text-align: start;
+  margin-bottom: 12px;
+}
+
+.about__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  color: $base-dark-blue;
+  margin-bottom: 36px;
+}
+
+.about__img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}

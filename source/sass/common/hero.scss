@@ -1,0 +1,69 @@
+
+.hero {
+  padding-bottom: 32px;
+  background: $screen-color;
+  color: $base-white;
+}
+
+.hero__header-wrapper {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.hero__logo {}
+
+.hero__telephone {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: $base-white;
+  text-decoration: none;
+}
+
+.hero__main-wrapper {}
+
+.hero__text-inner {
+  padding: 48px 0;
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.hero__town,
+.hero__title,
+.hero__text {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__town {
+  font-family: $alumni-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  margin-bottom: 14px;
+}
+
+.hero__title {
+  font-family: $alumni-font;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__button {}
+
+.hero__image {}
+
+.hero__text-left {
+  margin-right: 20px;
+}
