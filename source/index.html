@@ -92,7 +92,35 @@
         </ul>
       </div>
     </div>
-    <div data-test="games">asd</div>
+    <div class="games" data-test="games">
+      <div class="games__wrapper container">
+        <div class="games__inner">
+          <div class="games__title-wrapper">
+            <h2 class="games__title">SUPER GAMES</h2>
+            <div class="games__date-wrapper">
+              <span class="games__name">Дата</span>
+              <div class="games__date-inner">
+                <span class="games__definition">7</span>
+                <span class="games__date">Марта 2019</span>
+              </div>
+              <span class="games__name">Время</span>
+              <span class="games__definition">12:00</span>
+            </div>
+          </div>
+          <p class="games__text">Ежегодные соревнования по CrossFit</p>
+          <button class="games__button button">заполнить заявку</button>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width:1366px)" srcset="img/new-games-desktop.webp" width="660" height="501">
+          <source type="image/webp" media="(min-width:768px)" srcset="img/new-games-tablet.webp" width="378" height="348">
+          <source type="image/webp" srcset="img/new-games-mobile.webp" width="290" height="290">
+          <source type="image/jpg" media="(min-width:1366px)" srcset="img/new-games-desktop.jpg" width="660" height="501">
+          <source type="image/jpg" media="(min-width:768px)" srcset="img/new-games-tablet.jpg" width="378" height="348">
+          <img class="games__image" src="img/new-games-mobile.jpg" alt="Мужчина в дыму"
+            width="290" height="290">
+        </picture>
+      </div>
+    </div>
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>

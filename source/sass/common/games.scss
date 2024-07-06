@@ -1,0 +1,83 @@
+.games {
+  padding: 25px 0;
+}
+
+.games__wrapper {}
+
+.games__inner {
+  padding: 40px;
+  width: 290px;
+  background: $banners-color;
+  color: $base-white;
+}
+
+.games__title-wrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.games__title {
+  font-family: $alumni-font;
+  margin: 0;
+  width: 117px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $base-white;
+  margin-right: auto;
+}
+
+.games__date-wrapper {
+  width: 56px;
+}
+
+.games__name {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  position: relative;
+  margin-bottom: 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: 1px solid $base-white;
+    bottom: -3px;
+    left: 0;
+    width: 56px;
+  }
+}
+
+.games__definition {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.games__date {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.games__date-inner {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 4px;
+}
+
+.games__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  max-width: 171px;
+  margin-bottom: 16px;
+}
+
+.games__button {
+  color: $base-white;
+}
+
+.games__image {}
