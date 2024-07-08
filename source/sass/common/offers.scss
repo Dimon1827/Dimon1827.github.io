@@ -1,0 +1,56 @@
+.offers {
+  padding: 40px 0;
+}
+
+.offers__title {
+  margin-bottom: 40px;
+}
+
+.offers__wrapper {
+  margin-bottom: 40px;
+}
+
+.offers__inner {
+  background: $banners-color;
+  color: $base-white;
+  padding: 30px;
+  text-align: center;
+}
+
+.offers__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.offers__year {
+  display: block;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  margin-bottom: 28px;
+}
+
+.offers__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.offers__button {
+  text-decoration: none;
+  color: $base-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  border-bottom: 1px solid $base-white;
+  padding-bottom: 5px;
+}
+
+.offers__img {}
