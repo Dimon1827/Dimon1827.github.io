@@ -1,0 +1,74 @@
+.accordion {}
+
+.accordion__item {
+  position: relative;
+  padding: 20px 0;
+  border-top: 1px solid $dark-grey;
+}
+
+.accordion__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.accordion__trigger {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  color: $base-dark-blue;
+  margin-bottom: 0;
+  padding-right: 52px;
+
+  &::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid $base-secondary;
+    width: 30px;
+    height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.accordion__content {
+  display: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+  max-width: 248px;
+}
+
+.accordion__input:checked ~ .accordion__trigger {
+  margin-bottom: 20px;
+}
+
+.accordion__input:checked ~ .accordion__trigger::after {
+  background-color: $base-secondary;
+}
+
+.accordion__input:checked ~ .accordion__trigger::before {
+  width: 14px;
+  height: 2px;
+  top: 14px;
+  right: 8px;
+  background-color: $base-white;
+  z-index: 2;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+

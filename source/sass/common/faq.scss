@@ -1,0 +1,33 @@
+.faq {
+  background-color: $white-darker;
+}
+
+.faq__title {
+  margin-bottom: 35px;
+}
+
+.faq__wrapper {}
+
+.faq__tabs-wrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.faq__tab {
+  border: 1px solid $light-opacity-grey;
+  padding: 14px 8px;
+  width: 140px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: $base-dark-blue;
+
+  &--active {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: $base-white;
+    border: transparent;
+  }
+}
