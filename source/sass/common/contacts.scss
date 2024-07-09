@@ -1,0 +1,30 @@
+.contacts {
+  padding: 40px 0;
+}
+
+.contacts__title {
+  text-align: start;
+  margin-bottom: 42px;
+}
+
+.contacts__container {}
+
+.contacts__inner {
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.contacts__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.contacts__text {
+  margin: 0;
+  text-decoration: none;
+  color: $base-dark-blue;
+  font-style: normal;
+}
