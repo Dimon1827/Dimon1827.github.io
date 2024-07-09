@@ -1,0 +1,33 @@
+.form {
+  background-color: $base-dark-blue;
+  padding: 70px 0;
+}
+
+.form__title {
+  color: $base-white;
+  text-align: start;
+  margin-bottom: 36px;
+}
+
+.form__wrapper {}
+
+.form__input {
+  display: block;
+  margin-bottom: 36px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+  color: $base-white;
+  font-size: 14px;
+  width: 100%;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $dark-grey;
+
+  &::placeholder {
+    opacity: 0.4;
+  }
+}
+
+.form__button {
+  color: $base-white;
+}
