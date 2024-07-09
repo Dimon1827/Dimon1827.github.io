@@ -1,0 +1,31 @@
+.footer {
+  background-color: $base-black;
+  padding: 45px 0;
+}
+
+.footer__wrapper {}
+
+.footer__logo {
+  margin-bottom: 30px;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+  margin-bottom: 30px;
+}
+
+.footer__item {
+
+}
+
+.footer__link {
+  color: $base-white;
+  text-decoration: none;
+  line-height: 143%;
+  cursor: pointer;
+}
