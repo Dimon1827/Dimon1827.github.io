@@ -1,18 +1,32 @@
 .games {
   padding: 25px 0;
+  margin: 0 auto;
 }
 
-.games__wrapper {}
+.games__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
 
 .games__inner {
   padding: 40px;
   background: $banners-color;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .games__title-wrapper {
   display: flex;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .games__title {
@@ -25,10 +39,18 @@
   text-transform: uppercase;
   color: $base-white;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
 }
 
 .games__date-wrapper {
   width: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
 }
 
 .games__name {
@@ -47,6 +69,15 @@
     left: 0;
     width: 56px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+
+    &::after {
+      width: 100px;
+    }
+  }
 }
 
 .games__definition {
@@ -58,12 +89,21 @@
 .games__date {
   font-size: 12px;
   line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
 
 .games__date-inner {
   display: grid;
   grid-template-columns: repeat(2, min-content);
   column-gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
 }
 
 .games__text {
@@ -73,6 +113,13 @@
   line-height: 125%;
   max-width: 171px;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+    max-width: 220px;
+    margin-bottom: 11px;
+  }
 }
 
 .games__button {
@@ -80,5 +127,7 @@
 }
 
 .games__image {
-  width: 100%;
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }

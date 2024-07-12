@@ -103,6 +103,10 @@
 .hero__button {
   width: 185px;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 10px;
+  }
 }
 
 .hero__image {

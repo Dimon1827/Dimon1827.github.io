@@ -9,4 +9,8 @@
   width: 100%;
   background: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 10px;
+  }
 }
