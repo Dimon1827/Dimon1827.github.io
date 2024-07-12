@@ -5,6 +5,8 @@
   margin: 0 auto;
 }
 
+
+
 .video__frame {
   position: absolute;
   top: 0;
@@ -36,6 +38,10 @@
   border: none;
   cursor: pointer;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
 
   &::before {
     content: "";
