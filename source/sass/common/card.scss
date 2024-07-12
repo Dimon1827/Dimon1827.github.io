@@ -2,6 +2,15 @@
   background-color: $base-white;
 }
 
+.card__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+    padding: 0;
+  }
+}
+
 .card__item {
   text-align: center;
   padding: 20px;
@@ -12,16 +21,37 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    text-align: start;
+    min-height: 188px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .card__subtitle {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 
 .card__text {
   margin: 0;
   font-weight: 300;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+  }
 }
 
 .card__button {
