@@ -17,19 +17,27 @@
           <a class="hero__telephone" href="tel:88005555555">8 800 555-55-55</a>
         </div>
         <div class="hero__main-wrapper">
-          <div class="hero__text-inner">
-            <div class="hero__text-left">
-              <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="hero__text-wrapper">
+            <div class="hero__text-inner">
+              <div class="hero__text-left">
+                <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+              </div>
+              <div class="hero__text-right">
+                <p class="hero__town">Омск</p>
+                <h1 class="hero__title">Фитнес центр</h1>
+              </div>
             </div>
-            <div class="hero__text-right">
-              <p class="hero__town">Омск</p>
-              <h1 class="hero__title">Фитнес центр</h1>
-            </div>
+            <div class="hero__button button">Купить абонемент</div>
           </div>
-
-          <div class="hero__button button">Купить абонемент</div>
+          <picture>
+            <source type="image/webp" media="(min-width:1366px)" srcset="img/hero-img-desktop.webp" width="500" height="524">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/hero-img-tablet.webp" width="324" height="390">
+            <source type="image/jpg" media="(min-width:1366px)" srcset="img/hero-img-desktop.jpg" width="500" height="524">
+            <source type="image/jpg" media="(min-width:768px)" srcset="img/hero-img-tablet.jpg" width="324" height="390">
+            <img class="hero__image" src="#"
+              alt="Мужчина в футболке супермена" width="320" height="280">
+          </picture>
         </div>
-        <img class="hero__image visually-hidden" src="" alt="">
       </div>
     </div>
     <div class="about" data-test="about">
@@ -49,22 +57,26 @@
         <img class="about__img" src="img/gym-mobile.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
           width="320" height="280">
       </picture>
-      <iframe loading="lazy" src="https://www.youtube.com/embed/9TZXsZItgdw" width="320" height="170">
-        Ваш браузер не поддерживает iframe
-      </iframe>
+      <div class="video">
+        <iframe class="video__frame video__frame--js" src="" frameborder="0" allowTransparency="true" allowfullscreen
+          loading="lazy" data-src="https://www.youtube.com/embed/9TZXsZItgdw" width="320" height="170">Ваш браузер не
+          поддерживает iframe</iframe>
+        <div class="video__button-border"></div>
+        <button class="video__button video__button--js"></button>
+      </div>
     </div>
     <div class="price" data-test="price">
       <div class="container">
         <h2 class="price__title title">Абонементы</h2>
         <ul class="price__tabs">
           <li class="price__tab price__tab--active">
-            <button class="price__tab-button price__tab-button--active">1 месяц</button>
+            <button class="price__tab-button price__tab-button--active" data-id="0">1 месяц</button>
           </li>
           <li class="price__tab">
-            <button class="price__tab-button">6 месяцев</button>
+            <button class="price__tab-button" data-id="1">6 месяцев</button>
           </li>
           <li class="price__tab">
-            <button class="price__tab-button">12 месяцев</button>
+            <button class="price__tab-button" data-id="2">12 месяцев</button>
           </li>
         </ul>
         <ul class="price__list">
@@ -386,13 +398,6 @@
       </div>
     </div>
   </div>
-  <!-- пример использования спрайта -->
-  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg>
-  <!-- примеры требуемых атрибутов data-test="*" -->
-
   <script type="module" src="js/main.js"></script>
 </body>
 

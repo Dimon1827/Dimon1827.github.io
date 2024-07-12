@@ -6,7 +6,6 @@
 
 .games__inner {
   padding: 40px;
-  width: 290px;
   background: $banners-color;
   color: $base-white;
 }
@@ -80,4 +79,6 @@
   color: $base-white;
 }
 
-.games__image {}
+.games__image {
+  width: 100%;
+}
