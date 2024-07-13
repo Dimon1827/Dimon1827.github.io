@@ -1,10 +1,42 @@
 .reviews {
   background-color: $base-white;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  blockquote {
+    margin: 0;
+    font-weight: 300;
+
+    @media (min-width: $tablet-width) {
+      max-width: 320px;
+    }
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 100%;
+    }
+  }
 }
 
 .reviews__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__card {
@@ -15,19 +47,18 @@
   background: $base-secondary;
   color: $base-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 40px;
+  }
 }
 
-.reviews__image {}
-
-.reviews__subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 111%;
-}
-
-.reviews__text {
-  margin: 0;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 157%;
+.reviews__container-text {
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    grid-column: 2/3;
+  }
 }
