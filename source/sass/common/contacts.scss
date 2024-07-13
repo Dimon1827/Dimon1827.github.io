@@ -20,8 +20,8 @@
 .contacts__container {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 190px);
-    gap: 15px 60px;
+    grid-template-columns: repeat(2, 50%);
+    gap: 15px 30px;
     position: relative;
 
     &::after {
