@@ -3,10 +3,20 @@
   padding: 45px 0;
 }
 
-.footer__wrapper {}
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .footer__logo {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 110px;
+  }
 }
 
 .footer__list {
@@ -17,6 +27,12 @@
   flex-wrap: wrap;
   gap: 20px 35px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 418px;
+    column-gap: 10px;
+  }
 }
 
 .footer__item {
@@ -28,4 +44,10 @@
   text-decoration: none;
   line-height: 143%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 157%;
+  }
 }
