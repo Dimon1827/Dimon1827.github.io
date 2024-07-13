@@ -4,6 +4,10 @@
   position: relative;
   padding: 20px 0;
   border-top: 1px solid $dark-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $dark-grey;
+  }
 }
 
 .accordion__input {
@@ -32,6 +36,8 @@
     border: 1px solid $base-secondary;
     width: 30px;
     height: 30px;
+    font-size: 22px;
+    line-height: 100%;
   }
 
   &::before {
@@ -44,6 +50,10 @@
     background: url("../__spritemap#sprite-plus-view");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 156px;
+  }
 }
 
 .accordion__content {
@@ -51,11 +61,20 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 125%;
-  max-width: 248px;
+  max-width: 82%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+  }
 }
 
 .accordion__input:checked ~ .accordion__trigger {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .accordion__input:checked ~ .accordion__trigger::after {

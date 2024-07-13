@@ -1,6 +1,10 @@
 .faq {
   background-color: $white-darker;
   padding: 70px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
 }
 
 .faq__title {
@@ -14,6 +18,11 @@
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
 }
 
 .faq__tab {
@@ -30,5 +39,11 @@
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: $base-white;
     border: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 18px 8px;
+    font-size: 18px;
   }
 }
