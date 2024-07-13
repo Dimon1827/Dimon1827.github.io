@@ -1,6 +1,10 @@
 .price {
   padding: 40px 0;
   background-color: $white-darker;
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 }
 
 .price__title {
@@ -8,6 +12,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -24,6 +32,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
     width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin-bottom: 40px;
   }
 }
 
@@ -81,6 +94,24 @@
       background: image-set(url("../img/tokens.webp") type("image/webp"), url("../img/tokens.jpg") type("image/png"));
     }
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 360px);
+    gap: 15px 40px;
+
+    &::after {
+      width: 303px;
+      right: 3px;
+      height: 416px;
+      background: image-set(url("../img/tokens-desktop.webp") type("image/webp"), url("../img/tokens-desktop.png") type("image/png"));
+    }
+  }
+}
+
+.price__container {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .price__item {
@@ -98,6 +129,14 @@
     width: 380px;
     padding: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .price__subtitle {
@@ -112,6 +151,11 @@
     line-height: 100%;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    margin-bottom: 17px;
+  }
 }
 
 .price__limit {
@@ -121,6 +165,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
@@ -167,6 +215,10 @@
     font-size: 60px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .price__currency {}
@@ -174,4 +226,8 @@
 .price__button {
   border: 2px solid $base-dark-blue;
   color: $base-dark-blue;
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 10px;
+  }
 }
