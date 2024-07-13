@@ -1,15 +1,31 @@
 .form {
   background-color: $base-dark-blue;
   padding: 70px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 119px;
+  }
 }
 
 .form__title {
   color: $base-white;
   text-align: start;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 100%;
+    text-align: center;
+  }
 }
 
-.form__wrapper {}
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+  }
+}
 
 .form__input {
   display: block;
@@ -25,6 +41,10 @@
 
   &::placeholder {
     opacity: 0.4;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
   }
 }
 
