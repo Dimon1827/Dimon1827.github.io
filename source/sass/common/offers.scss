@@ -6,10 +6,28 @@
     max-width: 678px;
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+    max-width: 1160px;
+  }
+}
+
+.offers__container {
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .offers__title {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .offers__wrapper {
@@ -17,6 +35,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

@@ -9,6 +9,10 @@
     gap: 15px 30px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .card__item {
@@ -31,6 +35,15 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    min-height: 174px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 }
