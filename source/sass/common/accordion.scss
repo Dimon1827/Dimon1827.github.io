@@ -1,4 +1,8 @@
-.accordion {}
+.accordion {
+  @media (min-width: $desktop-width) {
+    width: 860px;
+  }
+}
 
 .accordion__item {
   position: relative;
@@ -7,6 +11,10 @@
 
   &:last-child {
     border-bottom: 1px solid $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 23px;
   }
 }
 
@@ -53,6 +61,11 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 156px;
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -67,6 +80,10 @@
     font-size: 18px;
     line-height: 133%;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 72%;
+  }
 }
 
 .accordion__input:checked ~ .accordion__trigger {
@@ -74,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 

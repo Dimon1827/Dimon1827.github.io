@@ -11,7 +11,12 @@
   margin-bottom: 35px;
 }
 
-.faq__wrapper {}
+.faq__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .faq__tabs-wrapper {
   display: flex;
@@ -22,6 +27,10 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -45,5 +54,14 @@
     width: 162px;
     padding: 18px 8px;
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 260px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
