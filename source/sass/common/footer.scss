@@ -17,6 +17,10 @@
     margin: 0;
     width: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+  }
 }
 
 .footer__list {
@@ -32,6 +36,11 @@
     margin: 0 auto;
     width: 418px;
     column-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 57px;
+    width: 600px;
   }
 }
 

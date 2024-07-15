@@ -1,5 +1,28 @@
 .card {
   background-color: $base-white;
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: auto;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .card__container {
@@ -49,21 +72,15 @@
 }
 
 .card__subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 100%;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 26px;
     margin-bottom: 10px;
-  }
-}
-
-.card__text {
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: auto;
   }
 }
 

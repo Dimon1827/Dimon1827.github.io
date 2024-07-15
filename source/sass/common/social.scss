@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
+  }
 }
 
 .social__item {}

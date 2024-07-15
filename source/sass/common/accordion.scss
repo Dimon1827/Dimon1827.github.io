@@ -2,30 +2,63 @@
   @media (min-width: $desktop-width) {
     width: 860px;
   }
-}
 
-.accordion__item {
-  position: relative;
-  padding: 20px 0;
-  border-top: 1px solid $dark-grey;
-
-  &:last-child {
-    border-bottom: 1px solid $dark-grey;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 31px 0 23px;
+  p {
+    display: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 82%;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 133%;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 72%;
+    }
+  }
+
+  input:checked ~ label {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  input:checked ~ label::after {
+    background-color: $base-secondary;
+  }
+
+  input:checked ~ label::before {
+    width: 14px;
+    height: 1px;
+    top: 15px;
+    right: 8px;
+    background-color: $base-white;
+    z-index: 2;
+  }
+
+  input:checked ~ p {
+    display: block;
   }
 }
 
-.accordion__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.accordion__trigger {
+.accordion label {
   display: block;
   position: relative;
   font-weight: 400;
@@ -69,49 +102,16 @@
   }
 }
 
-.accordion__content {
-  display: none;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 125%;
-  max-width: 82%;
+.accordion__item {
+  position: relative;
+  padding: 20px 0;
+  border-top: 1px solid $dark-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 133%;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 72%;
+    padding: 31px 0 23px;
   }
 }
-
-.accordion__input:checked ~ .accordion__trigger {
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
-  }
-}
-
-.accordion__input:checked ~ .accordion__trigger::after {
-  background-color: $base-secondary;
-}
-
-.accordion__input:checked ~ .accordion__trigger::before {
-  width: 14px;
-  height: 1px;
-  top: 15px;
-  right: 8px;
-  background-color: $base-white;
-  z-index: 2;
-}
-
-.accordion__input:checked ~ .accordion__content {
-  display: block;
-}
-
