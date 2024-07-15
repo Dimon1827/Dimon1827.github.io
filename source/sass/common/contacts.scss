@@ -15,6 +15,17 @@
     line-height: 100%;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .contacts__container {
