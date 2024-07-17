@@ -66,10 +66,23 @@
   color: $base-grey;
   background: none;
   border: none;
+  padding-bottom: 10px;
+  position: relative;
+  cursor: pointer;
 
   &--active {
     color: #102654;
   }
+}
+
+.price__tab-button--active::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $scarlet-color;
 }
 
 .price__list {

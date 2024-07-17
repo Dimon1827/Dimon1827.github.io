@@ -12,18 +12,21 @@ const enterNumber = (firstPrices, month) => {
   });
 };
 
-tabs.addEventListener('click', (evt) => {
-  const chosenButton = Number(evt.target.closest('.price__tab-button').dataset.id);
-  if (chosenButton === 1) {
-    enterNumber(prices,sixMonth);
-    enterNumber(bigPrices, sixMonth);
-    evt.classList.add('price__tab--active');
+const addClassButton = (month) => {
+  enterNumber(prices, month);
+  enterNumber(bigPrices, month);
+};
 
+tabs.addEventListener('click', (evt) => {
+  const active = document.querySelector('.price__tab-button--active');
+  const chosenButton = Number(evt.target.closest('.price__tab-button').dataset.id);
+  active.classList.remove('price__tab-button--active');
+  if (chosenButton === 1) {
+    addClassButton(sixMonth);
   } else if (chosenButton === 2) {
-    enterNumber(prices, twelveMonth);
-    enterNumber(bigPrices, twelveMonth);
+    addClassButton(twelveMonth);
   } else {
-    enterNumber(prices, oneMonth);
-    enterNumber(bigPrices, oneMonth);
+    addClassButton(oneMonth);
   }
+  evt.target.classList.add('price__tab-button--active');
 });

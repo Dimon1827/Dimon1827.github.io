@@ -1,0 +1,33 @@
+.swiper-button {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 55%;
+  width: 18px;
+  height: 33px;
+  cursor: pointer;
+
+
+  &--left {
+    left: 0;
+    background: url("/__spritemap#sprite-left-swiper-button-view") center center no-repeat;
+  }
+
+  &--right {
+    right: 0;
+    background: url("/__spritemap#sprite-right-swiper-button-view");
+  }
+
+
+  @media (min-width: $tablet-width) {
+    &--left {
+      left: 39px;
+    }
+
+    &--right {
+      right: 39px;
+    }
+  }
+}

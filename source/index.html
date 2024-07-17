@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/vendor/swiper-bundle.css">
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -75,17 +76,11 @@
     <div class="price" data-test="price">
       <div class="price__container container">
         <h2 class="price__title title">Абонементы</h2>
-        <ul class="price__tabs">
-          <li class="price__tab price__tab--active">
-            <button class="price__tab-button price__tab-button--active" data-id="0">1 месяц</button>
-          </li>
-          <li class="price__tab">
-            <button class="price__tab-button" data-id="1">6 месяцев</button>
-          </li>
-          <li class="price__tab">
-            <button class="price__tab-button" data-id="2">12 месяцев</button>
-          </li>
-        </ul>
+        <div class="price__tabs">
+          <button class="price__tab-button price__tab-button--active" data-id="0">1 месяц</button>
+          <button class="price__tab-button" data-id="1">6 месяцев</button>
+          <button class="price__tab-button" data-id="2">12 месяцев</button>
+        </div>
         <ul class="price__list">
           <li class="price__item">
             <h3 class="price__subtitle">С тренером</h3>
@@ -145,11 +140,76 @@
     <div class="juri" data-test="juri">
       <div class="container">
         <h2 class="juri__title title">Жюри</h2>
-        <div class="juri-wrapper">
-          <picture>
-            <source type="image/webp" srcset="img/juri-photo.webp" width="260" height="300">
-            <img class="juri__image" src="img/juri-photo.jpg" alt="Анна Павлова" width="260" height="300">
-          </picture>
+        <div class="juri__container swiper">
+          <div class="juri__wrapper swiper-wrapper">
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-1.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-1.jpg" alt="Анна Павлова" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-2.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-2.jpg" alt="Алексей Лавров" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-3.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-3.jpg" alt="Александр Пашков" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-4.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-4.jpg" alt="Мария Кетова" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-1.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-1.jpg" alt="Анна Павлова" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-2.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-2.jpg" alt="Алексей Лавров" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-3.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-3.jpg" alt="Александр Пашков" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+            <div class="juri__slide swiper-slide">
+              <div class="juri__wrapper-image">
+                <picture>
+                  <source type="image/webp" srcset="img/juri-photo-4.webp" width="260" height="300">
+                  <img class="juri__image" src="img/juri-photo-4.jpg" alt="Мария Кетова" width="260" height="300">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button swiper-button--left">
+          </div>
+          <div class="swiper-button swiper-button--right"></div>
         </div>
       </div>
     </div>
@@ -246,10 +306,10 @@
       <h2 class="faq__title title">Вопросы и ответы</h2>
       <div class="faq__wrapper">
         <div class="faq__tabs-wrapper">
-          <button class="faq__tab button faq__tab--active">Центр</button>
-          <button class="faq__tab button">Абонемент</button>
-          <button class="faq__tab button">Услуги</button>
-          <button class="faq__tab button">Правила</button>
+          <button class="faq__tab button faq__tab--active" data-id="0">Центр</button>
+          <button class="faq__tab button" data-id="1">Абонемент</button>
+          <button class="faq__tab button" data-id="2">Услуги</button>
+          <button class="faq__tab button" data-id="3">Правила</button>
         </div>
         <div class="accordion">
           <div class="accordion__item">
@@ -279,7 +339,7 @@
             <label for="accordion-3">
               Есть кулеры в центре? Предоставляются полотенца?
             </label>
-            <p >
+            <p>
               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
               абонемента
               онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
@@ -303,25 +363,48 @@
   <div class="reviews" data-test="reviews">
     <div class="container">
       <h2 class="reviews__title title">Отзывы</h2>
-      <div class="reviews__card">
-        <picture>
-          <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet.webp" width="80"
-            height="80">
-          <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet.webp" width="80"
-            height="80">
-          <source type="image/webp" srcset="img/review-photo-mobile.webp" width="60" height="60">
-          <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet.jpg" width="80"
-            height="80">
-          <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet.jpg" width="80"
-            height="80">
-          <img src="img/review-photo-mobile.jpg" alt="Анна Орлова" width="60" height="60">
-        </picture>
-        <div class="reviews__container-text">
-          <h3>Анна Орлова</h3>
-          <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-            тренажёры обновляют, персонал дружелюбный.
-            Зал просторный, даже в вечернее время нет очередей»</blockquote>
+      <div class="reviews__container swiper">
+        <div class="reviews__wrapper swiper-wrapper">
+          <div class="reviews__card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet.webp" width="80"
+                height="80">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet.webp" width="80"
+                height="80">
+              <source type="image/webp" srcset="img/review-photo-mobile.webp" width="60" height="60">
+              <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet.jpg" width="80"
+                height="80">
+              <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet.jpg" width="80"
+                height="80">
+              <img src="img/review-photo-mobile.jpg" alt="Анна Орлова" width="60" height="60">
+            </picture>
+            <div class="reviews__container-text">
+              <h3>Анна Орлова</h3>
+              <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                тренажёры обновляют, персонал дружелюбный.
+                Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+          </div>
+          <div class="reviews__card swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet.webp" width="80" height="80">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet.webp" width="80" height="80">
+              <source type="image/webp" srcset="img/review-photo-mobile.webp" width="60" height="60">
+              <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet.jpg" width="80" height="80">
+              <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet.jpg" width="80" height="80">
+              <img src="img/review-photo-mobile.jpg" alt="Анна Орлова" width="60" height="60">
+            </picture>
+            <div class="reviews__container-text">
+              <h3>adsda</h3>
+              <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                тренажёры обновляют, персонал дружелюбный.
+                Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </div>
+          </div>
         </div>
+        <div class="reviews-button reviews-button--left">
+        </div>
+        <div class="reviews-button reviews-button--right"></div>
       </div>
     </div>
   </div>
@@ -413,6 +496,7 @@
     </div>
   </div>
   </div>
+  <script src="js/vector/swiper-bundle.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 
