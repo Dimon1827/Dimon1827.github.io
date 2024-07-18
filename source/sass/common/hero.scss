@@ -130,6 +130,9 @@
 
 .hero__button {
   margin-left: auto;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 185px;
@@ -139,6 +142,35 @@
   @media (min-width: $desktop-width) {
     width: 270px;
     padding: 27px 10px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $base-blue;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $base-white;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $base-black;
+    outline-offset: -2px;
+    background-color: $focus-button;
+  }
+
+  &:active {
+    color: $base-dark-blue;
+    background-color: $base-white;
+    outline: none;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 

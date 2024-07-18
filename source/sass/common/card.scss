@@ -87,4 +87,17 @@
 .card__button {
   color: $base-secondary;
   border-color: $base-secondary;
+
+  &--disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.card__button.offers__button {
+  &::after {
+    background-color: $dark-grey;
+  }
+
+  outline-color: $base-secondary;
 }

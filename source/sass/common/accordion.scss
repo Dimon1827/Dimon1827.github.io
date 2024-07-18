@@ -8,6 +8,22 @@
     top: 0;
     left: 0;
     opacity: 0;
+
+    &:focus ~ label::after {
+      border-color: $base-secondary;
+      background-color: $dark-grey;
+    }
+
+    &:focus ~ label::before {
+      background-color: $base-white;
+      z-index: 4;
+    }
+
+    &:disabled ~ label {
+      pointer-events: none;
+      cursor: none;
+      opacity: 0.3;
+    }
   }
 
   p {
@@ -49,6 +65,7 @@
     height: 1px;
     top: 15px;
     right: 8px;
+    mask-image: none;
     background-color: $base-white;
     z-index: 2;
   }
@@ -88,8 +105,20 @@
     right: 7px;
     width: 15px;
     height: 13px;
-    background: url("../__spritemap#sprite-plus-view");
-    background-repeat: no-repeat;
+    mask-image: url("../__spritemap#sprite-plus-view");
+    mask-repeat: no-repeat;
+    background-color: $base-secondary;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $base-white;
+      z-index: 4;
+    }
+
+    &::after {
+      background-color: $base-secondary;
+    }
   }
 
   @media (min-width: $tablet-width) {
