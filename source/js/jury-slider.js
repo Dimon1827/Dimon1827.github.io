@@ -1,7 +1,7 @@
 new Swiper('.juri__container', {
   navigation: {
-    nextEl: '.swiper-button--right',
-    prevEl: '.swiper-button--left'
+    nextEl: '.juri-button--right',
+    prevEl: '.juri-button--left'
   },
 
   autoplay: {

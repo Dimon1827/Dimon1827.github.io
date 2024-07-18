@@ -6,28 +6,52 @@
   position: absolute;
   top: 55%;
   width: 18px;
-  height: 33px;
   cursor: pointer;
-
-
-  &--left {
-    left: 0;
-    background: url("/__spritemap#sprite-left-swiper-button-view") center center no-repeat;
-  }
-
-  &--right {
-    right: 0;
-    background: url("/__spritemap#sprite-right-swiper-button-view");
-  }
-
+  height: 33px;
 
   @media (min-width: $tablet-width) {
     &--left {
-      left: 39px;
+      left: 22%;
     }
 
     &--right {
-      right: 39px;
+      right: 22%;
     }
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: -7px;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-color: $base-white;
+      border: 1px solid $base-dark-blue;
+    }
+  }
+
+  &:focus {
+    &::after {
+      background-color: $light-grey;
+      border: 1px solid $base-dark-blue;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $base-dark-blue;
+    }
+  }
+
+
 }

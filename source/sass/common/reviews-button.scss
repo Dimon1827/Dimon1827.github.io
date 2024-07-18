@@ -1,26 +1,15 @@
 .reviews-button {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-
-  position: absolute;
-  top: 55%;
-  width: 18px;
-  cursor: pointer;
-  height: 33px;
-
-  &--left {
-    left: 0;
-    background: url("/__spritemap#sprite-left-swiper-button-view") center center no-repeat;
-  }
-
-  &--right {
-    right: 0;
-    background: url("/__spritemap#sprite-right-swiper-button-view");
-  }
-
-
   @media (min-width: $tablet-width) {
+    &--left {
+      left: 6%;
+    }
+
+    &--right {
+      right: 6%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     &--left {
       left: 22%;
     }
