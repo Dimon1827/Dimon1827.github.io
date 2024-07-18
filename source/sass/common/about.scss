@@ -1,5 +1,6 @@
 .about {
   padding: 40px 0;
+  position: relative;
 
   p {
     margin: 0;
@@ -42,6 +43,8 @@
     padding: 0;
     padding-top: 60px;
     padding-bottom: 120px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,8 +52,8 @@
     text-align: start;
     justify-content: space-between;
     padding: 120px 103px;
+    padding-bottom: 240px;
     width: 1366px;
-    margin: 0 auto;
   }
 }
 
@@ -107,7 +110,7 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 120px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

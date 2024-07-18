@@ -63,15 +63,24 @@
         <img class="about__img" src="img/gym-mobile.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
           width="320" height="280">
       </picture>
-      <!-- <div class="video">
+      <div class="video">
         <div class="video__wrapper">
-          <iframe class="video__frame video__frame--js" src="" frameborder="0" allowTransparency="true" allowfullscreen
-            loading="lazy" data-src="https://www.youtube.com/embed/9TZXsZItgdw" width="320" height="170">Ваш браузер не
-            поддерживает iframe</iframe>
+          <picture>
+            <source type="image/webp" media="(min-width:1366px)" srcset="img/video-desktop.webp" width="360" height="230">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/video-tablet.webp" width="270" height="170">
+            <source type="image/webp" srcset="img/video.webp" width="320" height="170">
+            <source type="image/jpg" media="(min-width:1366px)" srcset="img/video-desktop.jpg" width="360" height="230">
+            <source type="image/jpg" media="(min-width:768px)" srcset="img/video-tablet.jpg" width="270" height="170">
+            <img class="video__image" src="img/video.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
+              width="320" height="170">
+          </picture>
+          <iframe class="video__frame" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
           <div class="video__button-border"></div>
-          <button class="video__button video__button--js"></button>
+          <button class="video__button"></button>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="price" data-test="price">
       <div class="price__container container">

@@ -4,6 +4,7 @@
 // import 'swiper/css';
 
 // import './youtube-play.js';
+import './video.js';
 import './tab.js';
 import './question-tab.js';
 import './reviews-slider.js';
