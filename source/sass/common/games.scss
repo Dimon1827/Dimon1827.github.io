@@ -167,6 +167,22 @@
 
 .games__button {
   color: $base-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $base-white;
+    border-color: $base-dark-blue;
+    color: $base-dark-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background: $light-grey;
+  }
 }
 
 .games__image {

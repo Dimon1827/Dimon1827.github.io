@@ -24,6 +24,35 @@
   line-height: 100%;
   color: $base-white;
   text-decoration: none;
+  position: relative;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    color: $base-secondary;
+  }
+
+  &:active {
+    color: $base-dark-blue;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $base-dark-blue;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .hero__main-wrapper {

@@ -17,7 +17,42 @@
 
 .social__item {}
 
-.social__link {}
+.social__link {
+  &:focus {
+    outline: none;
+  }
 
-.social__image {}
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.social__link--disabled .social__image {
+  opacity: 0.7;
+}
+
+.social__link:hover .social__image,
+.social__link:focus .social__image,
+.social__link:active .social__image {
+  --color-content: #ffffff;
+}
+
+.social__link:hover .social__image {
+  --color-background: #74819c;
+}
+
+.social__link:focus .social__image {
+  --color-background: #103aae;
+}
+
+.social__link:active .social__image {
+  --color-background: #102654;
+}
+
+.social__image {
+  --color-background: #ffffff;
+  --color-content: #000000;
+}
+
+
 

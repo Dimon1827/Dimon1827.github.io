@@ -60,4 +60,33 @@
 
 .form__button {
   color: $base-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $base-blue;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $base-white;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 2px solid $base-black;
+    outline-offset: -2px;
+    background-color: $focus-button;
+  }
+
+  &:active {
+    color: $base-dark-blue;
+    background-color: $base-white;
+    outline: none;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }

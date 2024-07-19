@@ -44,10 +44,28 @@
   text-transform: capitalize;
   color: $base-dark-blue;
 
+  &:hover,
+  &:focus {
+    border-color: $base-dark-blue;
+    outline: none;
+  }
+
+  &:active {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: $base-white;
+    outline: none;
+  }
+
   &--active {
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: $base-white;
     border: transparent;
+  }
+
+  &--disabled {
+    border-color: rgba(16, 38, 84, 0.2);
+    color: #c8c9cc;
+    pointer-events: none;
   }
 
   @media (min-width: $tablet-width) {
