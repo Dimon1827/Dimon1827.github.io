@@ -4,9 +4,9 @@ new Swiper('.juri__container', {
     prevEl: '.juri-button--left'
   },
 
-  // autoplay: {
-  //   delay: 2000
-  // },
+  autoplay: {
+    delay: 2000
+  },
 
   breakpoints: {
     320: {

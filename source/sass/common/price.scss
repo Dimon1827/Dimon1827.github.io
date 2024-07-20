@@ -1,5 +1,6 @@
 .price {
-  padding: 40px 0;
+  padding: 41px 0;
+  padding-bottom: 40px;
   background-color: $white-darker;
 
   @media (min-width: $desktop-width) {
@@ -8,7 +9,7 @@
 }
 
 .price__title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
@@ -66,7 +67,7 @@
   color: $base-grey;
   background: none;
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   position: relative;
   cursor: pointer;
 
@@ -168,7 +169,7 @@
 }
 
 .price__item {
-  padding: 50px 42px;
+  padding: 51px 42px;
   width: 290px;
   background-color: $base-white;
   text-align: center;
@@ -176,7 +177,7 @@
   pointer-events: none;
 
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   &:hover,
@@ -247,6 +248,7 @@
   font-size: 80px;
   line-height: 150%;
   color: $light-grey;
+  opacity: 0.48;
   position: absolute;
   z-index: 1;
   top: 128px;
@@ -262,12 +264,15 @@
 .price__value {
   position: relative;
   z-index: 2;
+  right: 17px;
+  top: -2px;
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
   color: $base-blue;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
+
 
   &::after {
     content: "";
@@ -275,6 +280,7 @@
     width: 24px;
     height: 34px;
     z-index: 2;
+    right: 20px;
     top: 20px;
     background: url("../__spritemap#sprite-ruble-view");
     background-repeat: no-repeat;
@@ -295,6 +301,7 @@
 .price__button {
   display: block;
   border: 2px solid $base-dark-blue;
+  padding: 25px 10px;
   color: $base-dark-blue;
   text-decoration: none;
   pointer-events: auto;

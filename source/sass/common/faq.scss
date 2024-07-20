@@ -1,6 +1,7 @@
 .faq {
   background-color: $white-darker;
   padding: 70px 0;
+  padding-top: 71px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -8,7 +9,7 @@
 }
 
 .faq__title {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .faq__wrapper {
@@ -50,16 +51,14 @@
     outline: none;
   }
 
-  &:active {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-    color: $base-white;
-    outline: none;
-  }
-
+  &:active,
   &--active {
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     color: $base-white;
-    border: transparent;
+    border: 1px solid transparent;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+    outline: none;
   }
 
   &--disabled {

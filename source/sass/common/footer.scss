@@ -1,6 +1,7 @@
 .footer {
   background-color: $base-black;
   padding: 45px 0;
+  padding-top: 40px;
 }
 
 .footer__wrapper {
@@ -11,7 +12,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -29,8 +30,8 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 35px;
-  margin-bottom: 30px;
+  gap: 18px 35px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;

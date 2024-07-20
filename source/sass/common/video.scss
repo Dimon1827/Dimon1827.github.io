@@ -88,9 +88,9 @@
     width: 0;
     height: 0;
     margin: -20px 0 0 -10px;
-    border-left: 13px solid #ffffff;
-    border-top: 6px solid transparent;
-    border-bottom: 9px solid transparent;
+    border-left: 10px solid #ffffff;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
     transition: border-color 300ms;
   }
 
@@ -167,9 +167,9 @@
   position: absolute;
   cursor: pointer;
   top: 50%;
-  left: 50%;
+  left: 51%;
   bottom: 31%;
-  right: 38%;
+  right: 39%;
   margin: -40px 0 0 -40px;
   z-index: 3;
   border: 2px solid $banners-color;

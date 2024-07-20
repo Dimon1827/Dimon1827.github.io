@@ -5,12 +5,12 @@
   p {
     margin: 0;
     padding: 0;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
     font-weight: 300;
     color: $base-dark-blue;
 
     @media (max-width: $max-tablet-width) {
-      &:nth-last-of-type(2) {
+      &:nth-last-of-type(1) {
         position: absolute;
         width: 1px;
         height: 1px;

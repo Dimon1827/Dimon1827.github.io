@@ -3,7 +3,6 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
-// import './youtube-play.js';
 import './form.js';
 import './video.js';
 import './tab.js';

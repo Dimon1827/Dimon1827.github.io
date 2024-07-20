@@ -4,7 +4,7 @@
   p {
     margin: 0;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: auto;
@@ -41,7 +41,8 @@
 .card__item {
   text-align: center;
   padding: 20px;
-  border: 9px solid;
+  padding-top: 21px;
+  border: 7px solid;
   border-image: $base-button-gradient;
   border-image-slice: 1;
 
