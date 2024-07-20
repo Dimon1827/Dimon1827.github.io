@@ -13,6 +13,14 @@
   }
 }
 
+.form__label {
+  font-family: $roboto-font;
+  font-size: 14px;
+  line-height: 157%;
+  font-weight: 400;
+  color: $error-color;
+}
+
 .form__title {
   color: $base-white;
   text-align: start;
@@ -37,9 +45,12 @@
   }
 }
 
+.form__input-box {
+  margin-bottom: 36px;
+}
+
 .form__input {
   display: block;
-  margin-bottom: 36px;
   font-weight: 300;
   background-color: transparent;
   border: none;
@@ -47,15 +58,34 @@
   font-size: 14px;
   width: 100%;
   padding-bottom: 4px;
-  border-bottom: 1px solid $dark-grey;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
   &::placeholder {
+    opacity: 0.7;
+  }
+
+  &:hover {
+    border-bottom-color: $base-white;
+  }
+
+  &:focus {
+    outline: 1px solid $base-white;
+    border: none;
+  }
+
+  &:disabled {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
     opacity: 0.4;
   }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
   }
+}
+
+.form__input.form__error {
+  border-color: $error-color;
+  margin-bottom: 2px;
 }
 
 .form__button {

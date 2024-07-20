@@ -28,3 +28,81 @@
 .juri__slide {
   width: auto;
 }
+
+.juri__wrapper-image {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    .juri__inner {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.juri__inner {
+  opacity: 0;
+  background-color: rgba(16, 38, 84, 0.89);
+  box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+  color: $base-white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7px;
+  top: 0;
+  padding: 46px 41px 51px 42px;
+}
+
+.juri__subtitle {
+  text-align: center;
+  font-size: 22px;
+  line-height: 100%;
+  color: $base-white;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.juri__marker {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.juri__list {
+  margin: 0;
+  padding: 0;
+  width: 160px;
+}
+
+.juri__item {
+  list-style-type: none;
+  position: relative;
+  font-size: 14px;
+  line-height: 157%;
+  padding-left: 16px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    border-radius: 100%;
+    background-color: $base-white;
+    width: 6px;
+    height: 7px;
+  }
+}
