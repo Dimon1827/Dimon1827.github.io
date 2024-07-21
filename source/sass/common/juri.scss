@@ -1,6 +1,11 @@
 .juri {
   padding-top: 41px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 52px;
+  }
 }
 
 .juri__wrapper {
@@ -10,6 +15,11 @@
 
 .juri__title {
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    margin-bottom: 46px;
+  }
 }
 
 .juri__image {

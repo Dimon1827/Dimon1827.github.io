@@ -5,6 +5,7 @@
     margin: 0 auto;
     max-width: 678px;
     padding: 60px 0;
+    padding-top: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +26,10 @@
 .offers__title {
   margin-bottom: 39px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
   }
@@ -35,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +58,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 40px 25px;
+    padding-bottom: 45px;
     text-align: start;
     flex-direction: column;
     align-items: baseline;
@@ -82,7 +89,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 }
 
@@ -145,6 +152,12 @@
   &--disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -5px;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 119px;
+    padding-bottom: 59px;
   }
 }
 
@@ -50,6 +51,10 @@
 
   &:last-child {
     margin-bottom: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
   }
 }
 
@@ -123,5 +128,9 @@
   &--disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 10px;
   }
 }

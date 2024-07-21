@@ -3,6 +3,11 @@
   padding-bottom: 40px;
   background-color: $white-darker;
 
+  @media (min-width: $tablet-width) {
+    padding: 61px 0;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 100px 0;
   }
@@ -12,7 +17,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +36,7 @@
   width: 290px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 45px;
     width: 310px;
   }
 
@@ -109,6 +114,10 @@
   &--active {
     color: $base-dark-blue;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .price__tab-button--disabled {
@@ -141,7 +150,7 @@
       content: "";
       position: absolute;
       right: -45px;
-      bottom: -54px;
+      bottom: -56px;
       width: 325px;
       height: 384px;
       z-index: -1;
@@ -198,6 +207,10 @@
   @media (min-width: $tablet-width) {
     width: 380px;
     padding: 65px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -289,6 +302,14 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-bottom: 22px;
+    top: 0;
+    right: 22px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+      top: 24px;
+    }
   }
 
   @media (min-width: $desktop-width) {

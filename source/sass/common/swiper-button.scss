@@ -10,6 +10,8 @@
   height: 33px;
 
   @media (min-width: $tablet-width) {
+    top: 58%;
+
     &--left {
       left: 22%;
     }

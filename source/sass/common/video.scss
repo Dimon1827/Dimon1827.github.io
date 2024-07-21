@@ -6,8 +6,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 270px;
-    left: 32%;
-    bottom: 4%;
+    left: 249px;
+    bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +96,17 @@
 
   @media (min-width: $tablet-width) {
     left: 36%;
+
+    &::before {
+      left: 12px;
+    }
+
+    &::after {
+      top: 68%;
+      left: 56%;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -176,5 +187,9 @@
   opacity: 0.2;
   border-radius: 100%;
   transition: border-color 300ms;
+
+  @media (min-width: $tablet-width) {
+    right: 37%;
+  }
 }
 

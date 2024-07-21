@@ -1,11 +1,13 @@
 .juri-button {
+  top: 57%;
+
   @media (min-width: $tablet-width) {
     &--left {
-      left: 39px;
+      left: 50px;
     }
 
     &--right {
-      right: 39px;
+      right: 50px;
     }
   }
 }

@@ -2,12 +2,16 @@
   background-color: $base-black;
   padding: 45px 0;
   padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0;
+  }
 }
 
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -36,7 +40,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 395px;
-    column-gap: 30px;
+    column-gap: 31px;
   }
 
   @media (min-width: $desktop-width) {

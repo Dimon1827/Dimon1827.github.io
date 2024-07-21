@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 119px;
+    padding-bottom: 59px;
   }
 }
 
@@ -83,6 +84,7 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-size: 14px;
     line-height: 157%;
   }

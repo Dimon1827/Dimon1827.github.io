@@ -5,11 +5,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
+    padding-top: 61px;
   }
 }
 
 .faq__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .faq__wrapper {
@@ -69,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 18px 8px;
+    padding: 17px 8px;
     font-size: 18px;
   }
 

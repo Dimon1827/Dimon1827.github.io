@@ -56,6 +56,8 @@
     flex-direction: column;
     text-align: start;
     min-height: 188px;
+    padding-top: 20px;
+    padding-bottom: 25px;
 
     &:not(:last-child) {
       margin-bottom: 0;
