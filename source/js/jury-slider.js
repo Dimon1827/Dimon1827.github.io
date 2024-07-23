@@ -25,4 +25,3 @@ new Swiper('.juri__container', {
   loop: true,
   speed: 500
 });
-

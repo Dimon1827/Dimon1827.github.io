@@ -6,6 +6,11 @@
     padding: 60px 119px;
     padding-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
+    border-top: 1px solid $dark-grey;
+  }
 }
 
 .contacts__title {
@@ -20,6 +25,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: start;
+    margin-bottom: 36px;
   }
 }
 
@@ -45,6 +51,10 @@
       left: 50%;
       height: 100%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 60px;
   }
 }
 

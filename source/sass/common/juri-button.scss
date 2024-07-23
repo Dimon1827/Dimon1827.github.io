@@ -10,4 +10,10 @@
       right: 50px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--right {
+      right: 48px;
+    }
+  }
 }

@@ -149,36 +149,43 @@
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+
+    &::after {
+      height: 41px;
+      top: -9px;
+    }
   }
 }
 
 .accordion__item:nth-of-type(3) label,
 .accordion__item:nth-of-type(4) label {
-  &::after {
-    top: 15px;
-  }
+  @media (max-width: $mobile-width) {
+    &::after {
+      top: 15px;
+    }
 
-  &::before {
-    top: 24px;
+    &::before {
+      top: 24px;
+    }
   }
 }
 
+.accordion__item:nth-of-type(3) input:checked ~ label::before,
+.accordion__item:nth-of-type(4) input:checked ~ label::before {
+  @media (max-width: $mobile-width) {
+    top: 29px;
+  }
+}
 
 .accordion__item:nth-of-type(4) label::after {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     top: 1px;
   }
 }
 
 .accordion__item:nth-of-type(4) label::before {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     top: 12px;
-  }
-}
-
-.accordion__item:nth-of-type(4) input:checked ~ label::before {
-  @media (min-width: $tablet-width) {
-    top: 20px;
   }
 }
 
@@ -208,10 +215,20 @@
       padding-top: 24px;
       padding-bottom: 22px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 32px;
+      padding-bottom: 28px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 30px;
   }
 }

@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 92px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 113px;
+  }
 }
 
 .hero__header-wrapper {
@@ -23,12 +27,16 @@
   @media (min-width: $tablet-width) {
     width: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+  }
 }
 
 .hero__telephone {
   font-family: $roboto-font;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 100%;
   color: $base-white;
   text-decoration: none;
@@ -65,6 +73,10 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
 }
 
 .hero__main-wrapper {
@@ -76,6 +88,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 147px;
     padding-right: 72px;
+    padding-top: 28px;
   }
 }
 
@@ -120,7 +133,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -166,7 +179,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
   }
 }
 
@@ -183,7 +196,7 @@
 
   @media (min-width: $desktop-width) {
     width: 270px;
-    padding: 27px 10px;
+    padding: 25px 10px;
   }
 
   &:hover,

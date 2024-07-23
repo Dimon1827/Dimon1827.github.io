@@ -118,6 +118,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
 }
 
 .price__tab-button--disabled {
@@ -164,7 +169,8 @@
 
     &::after {
       width: 303px;
-      right: 3px;
+      right: 0;
+      bottom: -70px;
       height: 416px;
       background: image-set(url("../img/tokens-desktop.webp") type("image/webp"), url("../img/tokens-desktop.png") type("image/png"));
     }
@@ -251,7 +257,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 77px;
   }
 }
 
@@ -271,6 +277,11 @@
     font-size: 100px;
     top: 156px;
     left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 148px;
+    left: 79px;
   }
 }
 
@@ -314,10 +325,13 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
+
+    &::after {
+      top: 25px;
+      right: 10px;
+    }
   }
 }
-
-.price__currency {}
 
 .price__button {
   display: block;
@@ -355,6 +369,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 10px;
+    padding: 25px 10px;
   }
 }

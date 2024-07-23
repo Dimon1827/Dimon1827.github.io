@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 101px 0;
+  }
 }
 
 .games__wrapper {
@@ -27,7 +31,7 @@
   @media (min-width: $desktop-width) {
     width: 500px;
     padding: 60px 80px;
-    padding-bottom: 95px;
+    padding-bottom: 97px;
   }
 }
 
@@ -106,7 +110,12 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
-    padding-bottom: 4px;
+    padding-bottom: 0;
+
+    &::after {
+      width: 94px;
+      bottom: -7px;
+    }
   }
 }
 
@@ -165,7 +174,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 

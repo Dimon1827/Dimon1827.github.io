@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="sass/vendor/swiper-bundle.css">
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="favicon.ico">
+
 </head>
 
 <body class="page__body">
@@ -56,9 +59,9 @@
       </div>
       <picture>
         <source type="image/webp" media="(min-width:1366px)" srcset="img/gym-desktop.webp" width="660" height="400">
-        <source type="image/webp" media="(min-width:768px)" srcset="img/gym-desktop.webp" width="678" height="345">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/gym-tablet.webp" width="678" height="345">
         <source type="image/webp" srcset="img/gym-mobile.webp" width="320" height="280">
-        <source type="image/jpg" media="(min-width:1366px)" srcset="img/gym-desktop.jpg" width="660" height="400">
+        <source type="image/jpg" media="(min-width:1366px)" srcset="img/gym-tablet.jpg" width="660" height="400">
         <source type="image/jpg" media="(min-width:768px)" srcset="img/gym-desktop.jpg" width="678" height="345">
         <img class="about__img" src="img/gym-mobile.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
           width="320" height="280">
@@ -79,7 +82,9 @@
             title="YouTube video player" loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-          <button class="video__button"></button>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка для включения видео</span>
+          </button>
           <div class="video__button-border"></div>
         </div>
       </div>
@@ -88,9 +93,9 @@
       <div class="price__container container">
         <h2 class="price__title title">Абонементы</h2>
         <div class="price__tabs">
-          <button class="price__tab-button price__tab-button--active" data-id="0">1 месяц</button>
-          <button class="price__tab-button" data-id="1">6 месяцев</button>
-          <button class="price__tab-button" data-id="2">12 месяцев</button>
+          <button class="price__tab-button price__tab-button--active" data-id="0" type="button">1 месяц</button>
+          <button class="price__tab-button" data-id="1" type="button">6 месяцев</button>
+          <button class="price__tab-button" data-id="2" type="button">12 месяцев</button>
         </div>
         <ul class="price__list">
           <li class="price__item">
@@ -133,7 +138,7 @@
             </div>
           </div>
           <p class="games__text">Ежегодные соревнования по CrossFit</p>
-          <button class="games__button button">заполнить заявку</button>
+          <button class="games__button button" type="button">заполнить заявку</button>
         </div>
         <picture>
           <source type="image/webp" media="(min-width:1366px)" srcset="img/new-games-desktop.webp" width="660"
@@ -291,13 +296,13 @@
             </div>
           </div>
           <div class="swiper-button juri-button juri-button--left">
-            <svg class="reviews__button-image" width="18" height="33" aria-hidden="true" focusable="false">
+            <svg class="juri-button__image" width="18" height="33" aria-hidden="true" focusable="false">
               <use href="/__spritemap#sprite-left-swiper-button"></use>
             </svg>
             <span class="visually-hidden">Левая стрелка</span>
           </div>
           <div class="swiper-button juri-button juri-button--right">
-            <svg class="reviews__button-image" width="18" height="33" aria-hidden="true" focusable="false">
+            <svg class="juri-button__image" width="18" height="33" aria-hidden="true" focusable="false">
               <use href="/__spritemap#sprite-right-swiper-button"></use>
             </svg>
             <span class="visually-hidden">Правая стрелка</span>
@@ -311,46 +316,46 @@
         <li class="features__item">
           <div class="features__container container">
             <div class="features__inner">
-              <span class="features__number">900</span>
-              <span class="features__definition">кв/м</span>
+              <span>900</span>
+              <span>кв/м</span>
             </div>
-            <h3 class="features__subtitle">Площадь</h3>
-            <p class="features__text">Занимайтесь без очередей <br class="features__transposition"> и толкучки</p>
+            <h3>Площадь</h3>
+            <p>Занимайтесь без очередей <br> и толкучки</p>
           </div>
         </li>
         <li class="features__item">
           <div class="features__container container">
             <div class="features__inner">
-              <span class="features__number">70</span>
-              <span class="features__definition">машин</span>
+              <span>70</span>
+              <span>машин</span>
             </div>
-            <h3 class="features__subtitle">Собственная парковка</h3>
-            <p class="features__text">Вы всегда найдёте место для своей машины на нашей парковке</p>
+            <h3>Собственная парковка</h3>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
           </div>
         </li>
-        <li class="features__item--special">
-          <p class="features__special-number">100</p>
-          <h3 class="features__subtitle">Тренажёров</h3>
-          <p class="features__text">Современные тренажёры на все группы мышц</p>
+        <li class="features__item features__item--special">
+          <span>100</span>
+          <h3>Тренажёров</h3>
+          <p>Современные тренажёры на все группы мышц</p>
         </li>
         <li class="features__item">
           <div class="features__container container">
             <div class="features__inner">
-              <span class="features__number">350</span>
-              <span class="features__definition">мест</span>
+              <span>350</span>
+              <span>мест</span>
             </div>
-            <h3 class="features__subtitle">Комфорт</h3>
-            <p class="features__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            <h3>Комфорт</h3>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </div>
         </li>
         <li class="features__item">
           <div class="features__container container">
             <div class="features__inner">
-              <span class="features__number">5+</span>
-              <span class="features__definition">лет</span>
+              <span>5+</span>
+              <span>лет</span>
             </div>
-            <h3 class="features__subtitle">Тренерский опыт</h3>
-            <p class="features__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            <h3>Тренерский опыт</h3>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
           </div>
         </li>
       </ul>
@@ -398,17 +403,15 @@
       <h2 class="faq__title title">Вопросы и ответы</h2>
       <div class="faq__wrapper">
         <div class="faq__tabs-wrapper">
-          <button class="faq__tab button faq__tab--active" data-id="0">Центр</button>
-          <button class="faq__tab button" data-id="1">Абонемент</button>
-          <button class="faq__tab button" data-id="2">Услуги</button>
-          <button class="faq__tab button" data-id="3">Правила</button>
+          <button class="faq__tab button faq__tab--active" data-id="0" type="button">Центр</button>
+          <button class="faq__tab button" data-id="1" type="button">Абонемент</button>
+          <button class="faq__tab button" data-id="2" type="button">Услуги</button>
+          <button class="faq__tab button" data-id="3" type="button">Правила</button>
         </div>
         <div class="accordion">
           <div class="accordion__item">
-            <input type="checkbox" id="accordion-1" checked>
-            <label for="accordion-1">
-              Как стать членом <br class="accordion__transposition"> фитнес-центра?
-            </label>
+            <input type="checkbox" id="accordion-1" name="accordion-1" checked>
+            <label for="accordion-1">Как стать членом <br class="accordion__transposition"> фитнес-центра?</label>
             <p>
               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
               абонемента
@@ -416,7 +419,7 @@
             </p>
           </div>
           <div class="accordion__item">
-            <input type="checkbox" id="accordion-2">
+            <input type="checkbox" id="accordion-2" name="accordion-2">
             <label for="accordion-2">
               Где можно посмотреть расписание?
             </label>
@@ -427,7 +430,7 @@
             </p>
           </div>
           <div class="accordion__item">
-            <input type="checkbox" id="accordion-3">
+            <input type="checkbox" id="accordion-3" name="accordion-3">
             <label for="accordion-3">
               Есть кулеры в центре? Предоставляются полотенца?
             </label>
@@ -438,9 +441,9 @@
             </p>
           </div>
           <div class="accordion__item">
-            <input type="checkbox" id="accordion-4">
+            <input type="checkbox" id="accordion-4" name="accordion-4">
             <label for="accordion-4">
-              Сколько тренеров работает в клубе и какова  их квалификация?
+              Сколько тренеров работает в клубе и какова их квалификация?
             </label>
             <p>
               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
@@ -498,14 +501,14 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button reviews-button--left">
-          <svg class="reviews__button-image" width="18" height="33" aria-hidden="true" focusable="false">
+        <div class="swiper-button reviews-button reviews-button--left">
+          <svg class="reviews-button__image" width="18" height="33" aria-hidden="true" focusable="false">
             <use href="/__spritemap#sprite-left-swiper-button"></use>
           </svg>
           <span class="visually-hidden">Левая стрелка</span>
         </div>
-        <div class="swiper-button reviews-button--right">
-          <svg class="reviews__button-image" width="18" height="33" aria-hidden="true" focusable="false">
+        <div class="swiper-button reviews-button reviews-button--right">
+          <svg class="reviews-button__image" width="18" height="33" aria-hidden="true" focusable="false">
             <use href="/__spritemap#sprite-right-swiper-button"></use>
           </svg>
           <span class="visually-hidden">Правая стрелка</span>
@@ -520,10 +523,12 @@
           <h2 class="form__title title">Бесплатное занятие</h2>
           <div class="form__wrapper">
             <div class="form__input-box">
-              <input type="text" class="form__input" placeholder="Имя" name="name" id="name">
+              <input class="form__input" type="text" placeholder="Имя" name="name" id="name">
+              <label class="visually-hidden" for="name">Имя</label>
             </div>
             <div class="form__input-box">
-              <input type="text" class="form__input" placeholder="Телефон" name="telephone" id="telephone">
+              <input class="form__input" type="text" placeholder="Телефон" name="telephone" id="telephone">
+              <label class="visually-hidden" for="telephone">Телефон</label>
             </div>
           </div>
           <button class="form__button button" type="submit">Отправить</button>
@@ -559,24 +564,24 @@
       <div class="footer__wrapper">
         <img class="footer__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
         <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">Услуги</a>
+          <li>
+            <a class="footer__link" href="#">Услуги</a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Абонементы</a>
+          <li>
+            <a class="footer__link" href="#">Абонементы</a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Акции</a>
+          <li>
+            <a class="footer__link" href="#">Акции</a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Тренеры</a>
+          <li>
+            <a class="footer__link" href="#">Тренеры</a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Расписание</a>
+          <li>
+            <a class="footer__link" href="#">Расписание</a>
           </li>
         </ul>
         <ul class="social">
-          <li class="social__item">
+          <li>
             <a class="social__link" href="#">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-vk"></use>
@@ -584,7 +589,7 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link" href="#">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-ok"></use>
@@ -592,7 +597,7 @@
               <span class="visually-hidden">Одноклассники</span>
             </a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link" href="#">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-reddit"></use>
@@ -603,7 +608,6 @@
         </ul>
       </div>
     </div>
-  </div>
   </div>
   <script src="js/vector/swiper-bundle.js"></script>
   <script type="module" src="js/main.js"></script>

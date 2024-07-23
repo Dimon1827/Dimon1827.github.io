@@ -66,16 +66,6 @@
   }
 }
 
-.reviews__button-image {
-  stroke: $base-dark-blue;
-  position: relative;
-  z-index: 1;
-
-  &:active {
-    stroke: $base-white;
-  }
-}
-
 .reviews__card {
   margin: 0 auto;
   padding: 30px 25px;

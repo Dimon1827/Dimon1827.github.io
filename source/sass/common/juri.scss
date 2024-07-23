@@ -6,6 +6,11 @@
     padding-top: 30px;
     padding-bottom: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+    padding-bottom: 92px;
+  }
 }
 
 .juri__wrapper {
@@ -93,6 +98,16 @@
   margin: 0;
   padding: 0;
   width: 160px;
+}
+
+.juri-button__image {
+  stroke: $base-dark-blue;
+  position: relative;
+  z-index: 1;
+
+  &:active {
+    stroke: $base-white;
+  }
 }
 
 .juri__item {

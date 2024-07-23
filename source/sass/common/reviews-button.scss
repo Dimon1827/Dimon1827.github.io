@@ -11,11 +11,21 @@
 
   @media (min-width: $desktop-width) {
     &--left {
-      left: 22%;
+      left: 298px;
     }
 
     &--right {
-      right: 22%;
+      right: 298px;
     }
+  }
+}
+
+.reviews-button__image {
+  stroke: $base-dark-blue;
+  position: relative;
+  z-index: 1;
+
+  &:active {
+    stroke: $base-white;
   }
 }

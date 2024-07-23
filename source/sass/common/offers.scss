@@ -64,6 +64,11 @@
     align-items: baseline;
     width: 278px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 45px;
+    width: 280px;
+  }
 }
 
 .offers__subtitle {
@@ -77,6 +82,10 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
   }
 }
 

@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 45px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 0;
+  }
 }
 
 .footer__wrapper {
@@ -44,13 +48,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 82px;
-    width: 600px;
+    column-gap: 83px;
+    width: 601px;
   }
-}
-
-.footer__item {
-
 }
 
 .footer__link {

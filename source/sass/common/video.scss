@@ -13,8 +13,8 @@
   @media (min-width: $desktop-width) {
     width: 360px;
     height: 230px;
-    left: 37%;
-    bottom: 17%;
+    left: 503px;
+    bottom: 125px;
   }
 }
 
@@ -45,10 +45,6 @@
     width: 360px;
     height: 230px;
   }
-}
-
-.video__container-button {
-
 }
 
 .video__wrapper {
@@ -110,8 +106,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 39%;
-    top: 37%;
+    width: 100px;
+    height: 100px;
+
+
+    &::before {
+      width: 72px;
+      height: 72px;
+      left: 14px;
+      top: 15px;
+    }
+
+    &::after {
+      left: 57%;
+      top: 63%;
+      border-left: 12px solid $base-white;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
   }
 
   &:hover + .video__button-border,
@@ -147,10 +159,6 @@
   }
 
   &:active::before {
-    top: 15px;
-    left: 18px;
-    width: 45px;
-    height: 45px;
     background: $base-white;
   }
 
@@ -191,5 +199,10 @@
   @media (min-width: $tablet-width) {
     right: 37%;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    right: 36%;
+    top: 44%;
+    left: 47%;
+  }
+}

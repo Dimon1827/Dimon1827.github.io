@@ -6,6 +6,10 @@
     padding: 60px 119px;
     padding-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
+  }
 }
 
 .form__container {
@@ -81,6 +85,7 @@
   &:focus {
     outline: 1px solid $base-white;
     border: none;
+    padding-bottom: 5px;
   }
 
   &:disabled {
