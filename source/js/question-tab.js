@@ -1,5 +1,6 @@
 const tabs = document.querySelector('.faq__tabs-wrapper');
 const accordion = document.querySelector('.accordion');
+const inputs = accordion.querySelectorAll('input');
 const labels = accordion.querySelectorAll('label');
 const content = accordion.querySelectorAll('p');
 
@@ -73,3 +74,14 @@ tabs.addEventListener('click', (evt) => {
 
   evt.target.classList.add('faq__tab--active');
 });
+
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener('keydown', (evt) => {
+    if (evt.keyCode === 13) {
+      inputs[i].setAttribute('checked', '');
+    }
+  });
+}
+
+

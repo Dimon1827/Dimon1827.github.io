@@ -294,7 +294,7 @@
 .price__value {
   position: relative;
   z-index: 2;
-  right: 17px;
+  right: 71px;
   top: -2px;
   font-weight: 700;
   font-size: 48px;
@@ -302,6 +302,7 @@
   color: $base-blue;
   margin: 0;
   margin-bottom: 17px;
+  text-align: end;
 
 
   &::after {
@@ -310,7 +311,7 @@
     width: 24px;
     height: 34px;
     z-index: 2;
-    right: 20px;
+    right: -34px;
     top: 20px;
     background: url("../__spritemap#sprite-ruble-view");
     background-repeat: no-repeat;
@@ -320,21 +321,23 @@
     font-size: 60px;
     margin-bottom: 22px;
     top: 0;
-    right: 22px;
+    right: 86px;
 
     &::after {
       width: 30px;
       height: 42px;
       top: 24px;
+      right: -44px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 17px;
+    right: 77px;
 
     &::after {
-      top: 25px;
-      right: 10px;
+      top: 24px;
+      right: -45px;
     }
   }
 }

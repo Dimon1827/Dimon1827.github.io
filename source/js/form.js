@@ -25,13 +25,17 @@ function validation() {
 
   removeError(nameForm);
   removeError(telephone);
-
-  if (!REGEX__NAME.test(nameForm.value)) {
+  if (nameForm.value === '') {
+    createError(nameForm, 'Заполните поле');
+    result = false;
+  } else if (!REGEX__NAME.test(nameForm.value)) {
     createError(nameForm, 'Ошибка в имени. Используйте только буквы и пробелы');
     result = false;
   }
-
-  if (!REGEX__TELEPHONE.test(telephone.value)) {
+  if (telephone.value === '') {
+    createError(telephone, 'Заполните поле');
+    result = false;
+  } else if (!REGEX__TELEPHONE.test(telephone.value)) {
     createError(telephone, 'Ошибка в номере. Используйте только цифры');
     result = false;
   }
