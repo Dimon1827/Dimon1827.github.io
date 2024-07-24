@@ -6,5 +6,6 @@ button.addEventListener('click', () => {
   img.classList.add('active');
   button.classList.add('active');
   border.classList.add('active');
+  border.style.display = 'none';
   document.querySelector('iframe').src += '?autoplay=1';
 });

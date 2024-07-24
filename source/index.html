@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="sass/vendor/swiper-bundle.css">
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="icon" href="favicon.ico">
-
 </head>
 
 <body class="page__body">
@@ -101,21 +99,21 @@
           <li class="price__item">
             <h3 class="price__subtitle">С тренером</h3>
             <span class="price__limit">12 занятий</span>
-            <p class="price__big-value">5000</p>
+            <p class="price__big-value" aria-hidden="true">5000</p>
             <p class="price__value">5000</p>
             <a class="price__button button" href="#">Купить абонемент</a>
           </li>
           <li class="price__item">
             <h3 class="price__subtitle">Дневной</h3>
             <span class="price__limit">с 8:00 до 17:00</span>
-            <p class="price__big-value">1700</p>
+            <p class="price__big-value" aria-hidden="true">1700</p>
             <p class="price__value">1700</p>
             <a class="price__button button" href="#">Купить абонемент</a>
           </li>
           <li class="price__item">
             <h3 class="price__subtitle">Полный день</h3>
             <span class="price__limit">с 8:00 до 22:00</span>
-            <p class="price__big-value">2700</p>
+            <p class="price__big-value" aria-hidden="true">2700</p>
             <p class="price__value">2700</p>
             <a class="price__button button" href="#">Купить абонемент</a>
           </li>
@@ -138,7 +136,7 @@
             </div>
           </div>
           <p class="games__text">Ежегодные соревнования по CrossFit</p>
-          <button class="games__button button" type="button">заполнить заявку</button>
+          <a class="games__button button" href="#">заполнить заявку</a>
         </div>
         <picture>
           <source type="image/webp" media="(min-width:1366px)" srcset="img/new-games-desktop.webp" width="660"
@@ -486,15 +484,15 @@
                 height="80">
               <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet.webp" width="80"
                 height="80">
-              <source type="image/webp" srcset="img/review-photo-mobile.webp" width="60" height="60">
+              <source type="image/webp" srcset="img/review-photo-mobile.webp" width="68" height="68">
               <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet.jpg" width="80"
                 height="80">
               <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet.jpg" width="80"
                 height="80">
-              <img src="img/review-photo-mobile.jpg" alt="Анна Орлова" width="60" height="60">
+              <img class="reviews__image" src="img/review-photo-mobile.jpg" alt="Анна Орлова" width="68" height="68">
             </picture>
             <div class="reviews__container-text">
-              <h3>adsda</h3>
+              <h3>Анна Орлова</h3>
               <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
                 тренажёры обновляют, персонал дружелюбный.
                 Зал просторный, даже в вечернее время нет очередей»</blockquote>
@@ -582,7 +580,7 @@
         </ul>
         <ul class="social">
           <li>
-            <a class="social__link" href="#">
+            <a class="social__link" href="https://vk.com/id361320319">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-vk"></use>
               </svg>
@@ -590,7 +588,7 @@
             </a>
           </li>
           <li>
-            <a class="social__link" href="#">
+            <a class="social__link" href="https://ok.ru">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-ok"></use>
               </svg>
@@ -598,7 +596,7 @@
             </a>
           </li>
           <li>
-            <a class="social__link" href="#">
+            <a class="social__link" href="https://www.reddit.com">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-reddit"></use>
               </svg>
@@ -609,7 +607,6 @@
       </div>
     </div>
   </div>
-  <script src="js/vector/swiper-bundle.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

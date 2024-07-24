@@ -164,6 +164,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 20px;
+
     &::after {
       bottom: -5px;
     }

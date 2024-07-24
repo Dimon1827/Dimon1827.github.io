@@ -108,7 +108,7 @@
   padding: 50px 0;
   display: flex;
   text-align: end;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-bottom: 48px;
 
   @media (min-width: $tablet-width) {
@@ -244,6 +244,7 @@
 
 .hero__text-left {
   margin-right: 20px;
+  align-self: flex-end;
 
   @media (min-width: $tablet-width) {
     margin-right: 25px;

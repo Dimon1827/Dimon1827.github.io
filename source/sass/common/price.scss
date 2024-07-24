@@ -29,20 +29,26 @@
   display: flex;
   padding: 0;
   margin: 0 auto;
-  justify-content: space-between;
+  gap: 15px 45px;
   margin-bottom: 30px;
   list-style-type: none;
+  flex-wrap: wrap;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-  width: 290px;
+  max-width: 290px;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
-    width: 310px;
+    column-gap: 43px;
+    min-width: 310px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 350px;
+    min-width: 350px;
+    column-gap: 51px;
     margin-bottom: 40px;
+    max-width: auto;
   }
 }
 
@@ -165,7 +171,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 360px);
-    gap: 15px 40px;
+    gap: 40px;
 
     &::after {
       width: 303px;
@@ -344,21 +350,21 @@
   &:hover,
   &:focus,
   &:active {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
     color: $base-white;
     border: 2px solid transparent;
-    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
     border-image-slice: 1;
   }
 
   &:focus {
-    background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+    background: linear-gradient(100deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
     outline: 2px solid $base-black;
     outline-offset: -2px;
   }
 
   &:active {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    background: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
     color: rgba(255, 255, 255, 0.7);
     outline-color: transparent;
   }
