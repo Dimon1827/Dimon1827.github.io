@@ -5,7 +5,7 @@
   color: $base-white;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 92px;
+    padding-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,12 +13,23 @@
   }
 }
 
+.hero__container {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    max-width: $tablet-width;
+  }
+}
+
 .hero__header-wrapper {
   display: flex;
-  padding: 16px 0;
+  padding-top: 15px;
+  padding-bottom: 17px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 31px 0;
   }
 }
@@ -94,8 +105,8 @@
 
 .hero__text-wrapper {
   @media (min-width: $tablet-width) {
-    width: 48%;
-    padding: 31px 0;
+    width: 324px;
+    padding: 32px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +124,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,13 +162,13 @@
   font-weight: 800;
   font-size: 62px;
   line-height: 100%;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 72px;
     line-height: 118%;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,7 +186,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 157%;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,14 +254,22 @@
 }
 
 .hero__text-left {
-  margin-right: 20px;
+  margin-right: 24px;
   align-self: flex-end;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
   }
 }
 
 .hero__text-right {
   margin-left: auto;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    width: 185px;
+  }
 }

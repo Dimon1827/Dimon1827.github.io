@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import '/sass/vendor/swiper-bundle.css';
 
 new Swiper('.juri__container', {
   navigation: {
@@ -7,9 +7,9 @@ new Swiper('.juri__container', {
     prevEl: '.juri-button--left'
   },
 
-  autoplay: {
-    delay: 2000
-  },
+  // autoplay: {
+  //   delay: 2000
+  // },
 
   breakpoints: {
     320: {

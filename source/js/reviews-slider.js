@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import '/sass/vendor/swiper-bundle.css';
 
 new Swiper('.reviews__container', {
   navigation: {

@@ -1,7 +1,7 @@
 .reviews {
   background-color: $base-white;
   padding-top: 41px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -74,6 +74,7 @@
   background: $base-secondary;
   color: $base-white;
   text-align: center;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
     width: 500px;

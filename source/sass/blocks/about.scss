@@ -1,5 +1,7 @@
 .about {
   padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 39px;
   position: relative;
 
   p {
@@ -41,7 +43,7 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 61px;
     padding-bottom: 120px;
     width: 768px;
     margin: 0 auto;
@@ -67,7 +69,7 @@
 
 .about__title {
   text-align: start;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     text-align: center;

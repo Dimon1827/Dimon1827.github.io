@@ -1,6 +1,6 @@
 .games {
   padding: 25px 0;
-  padding-top: 24px;
+  padding-bottom: 24px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 0;
+    padding-top: 100px;
+    padding-bottom: 99px;
   }
 }
 
@@ -31,13 +32,14 @@
   @media (min-width: $desktop-width) {
     width: 500px;
     padding: 60px 80px;
+    padding-top: 61px;
     padding-bottom: 97px;
   }
 }
 
 .games__title-wrapper {
   display: flex;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 7px;
@@ -54,13 +56,14 @@
   width: 117px;
   font-weight: 600;
   font-size: 48px;
-  line-height: 112%;
+  line-height: 113%;
   text-transform: uppercase;
   color: $base-white;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 100px;
+    line-height: 112%;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +82,8 @@
 
   @media (min-width: $desktop-width) {
     width: 95px;
+    position: relative;
+    top: 0px;
   }
 }
 
@@ -93,7 +98,8 @@
   &::after {
     position: absolute;
     content: "";
-    border: 1px solid $base-white;
+    background-color: $base-white;
+    height: 1px;
     bottom: -3px;
     left: 0;
     width: 56px;
@@ -114,7 +120,7 @@
 
     &::after {
       width: 94px;
-      bottom: -7px;
+      bottom: -6px;
     }
   }
 }
@@ -174,7 +180,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 

@@ -25,6 +25,10 @@
   }
 }
 
+.social__image {
+  display: block;
+}
+
 .social__link--disabled .social__image {
   opacity: 0.7;
 }

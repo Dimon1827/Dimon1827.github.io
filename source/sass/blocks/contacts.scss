@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 60px;
+    gap: 14px 60px;
   }
 }
 
@@ -84,6 +84,10 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
   }
 }
 

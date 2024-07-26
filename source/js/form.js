@@ -1,7 +1,7 @@
 const nameForm = document.getElementById('name');
 const telephone = document.getElementById('telephone');
-const REGEX__NAME = /^[a-zа-яё\s]+$/i;
-const REGEX__TELEPHONE = /^[0-9+]{1,13}$/i;
+const regexName = /^[a-zа-яё\s]+$/i;
+const regexTelephone = /^[0-9+]{1,13}$/i;
 
 function validation() {
   let result = true;
@@ -28,14 +28,14 @@ function validation() {
   if (nameForm.value === '') {
     createError(nameForm, 'Заполните поле');
     result = false;
-  } else if (!REGEX__NAME.test(nameForm.value)) {
+  } else if (!regexName.test(nameForm.value)) {
     createError(nameForm, 'Ошибка в имени. Используйте только буквы и пробелы');
     result = false;
   }
   if (telephone.value === '') {
     createError(telephone, 'Заполните поле');
     result = false;
-  } else if (!REGEX__TELEPHONE.test(telephone.value)) {
+  } else if (!regexTelephone.test(telephone.value)) {
     createError(telephone, 'Ошибка в номере. Используйте только цифры');
     result = false;
   }

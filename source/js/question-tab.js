@@ -75,7 +75,6 @@ tabs.addEventListener('click', (evt) => {
   evt.target.classList.add('faq__tab--active');
 });
 
-
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener('keydown', (evt) => {
     if (evt.keyCode === 13) {
@@ -83,5 +82,3 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-
-
