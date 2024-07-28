@@ -5,8 +5,10 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
-  color: $base-dark-blue;
   text-align: center;
+  background: $base-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;

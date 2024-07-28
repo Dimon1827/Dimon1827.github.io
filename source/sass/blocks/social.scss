@@ -26,6 +26,9 @@
 }
 
 .social__image {
+  --color-background: #ffffff;
+  --color-content: #000000;
+
   display: block;
 }
 
@@ -49,9 +52,4 @@
 
 .social__link:active .social__image {
   --color-background: #102654;
-}
-
-.social__image {
-  --color-background: #ffffff;
-  --color-content: #000000;
 }

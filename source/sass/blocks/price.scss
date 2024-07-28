@@ -207,7 +207,7 @@
       content: "";
       position: absolute;
       border: 7px solid transparent;
-      border-image: $base-button-gradient;
+      border-image: $base-gradient;
       border-image-slice: 1;
       width: 100%;
       height: 100%;
@@ -353,21 +353,21 @@
   &:hover,
   &:focus,
   &:active {
-    background: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
+    background: $base-gradient;
     color: $base-white;
     border: 2px solid transparent;
-    border-image: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
+    border-image: $base-gradient;
     border-image-slice: 1;
   }
 
   &:focus {
-    background: linear-gradient(100deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+    background: $base-gradient;
     outline: 2px solid $base-black;
     outline-offset: -2px;
   }
 
   &:active {
-    background: linear-gradient(100deg, #ed0233 17%, #003eb7 100%);
+    background: $base-gradient;
     color: rgba(255, 255, 255, 0.7);
     outline-color: transparent;
   }

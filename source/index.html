@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="sass/vendor/swiper-bundle.css">
+  <link rel="stylesheet" href="sass/vendor/swiper.css">
   <link rel="stylesheet" href="sass/style.scss">
   <link rel="preload" href="fonts/robotoCondensed-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotoCondensed-light.woff2" as="font" crossorigin="anonymous">
@@ -22,54 +22,65 @@
       <div class="hero__container container">
         <div class="hero__header-wrapper">
           <img class="hero__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
-          <a class="hero__telephone" href="tel:88005555555">8 800 555-55-55</a>
+          <nav>
+            <ul class="header__list">
+              <li>
+                <a class="header__link" href="#">Услуги</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Абонементы</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Акции</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Тренеры</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="hero__main-wrapper">
           <div class="hero__text-wrapper">
-            <div class="hero__text-inner">
-              <div class="hero__text-left">
-                <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
-              </div>
-              <div class="hero__text-right">
-                <p class="hero__town">Омск</p>
-                <h1 class="hero__title">Фитнес центр</h1>
-              </div>
-            </div>
-            <a class="hero__button button" href="#price">Купить абонемент</a>
+            <p class="hero__name">Александр Костюков</p>
+            <p class="hero__marker">Мастер спорта, 10 лет работает тренером</p>
+            <h1 class="hero__title">Бесплатное пробное занятие с тренером</h1>
+            <a class="hero__button button" href="#form">Записаться на прием</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width:1366px)" srcset="img/hero-img-desktop.webp" width="500"
-              height="524">
-            <source type="image/webp" media="(min-width:768px)" srcset="img/hero-img-tablet.webp" width="324"
-              height="390">
-            <source type="image/jpg" media="(min-width:1366px)" srcset="img/hero-img-desktop.jpg" width="500"
-              height="524">
-            <source type="image/jpg" media="(min-width:768px)" srcset="img/hero-img-tablet.jpg" width="324"
-              height="390">
-            <img class="hero__image" src="#" alt="Мужчина в футболке супермена" width="320" height="280">
+            <source type="image/webp" media="(min-width:1366px)" srcset="img/hero-img.webp" width="540" height="1000">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/hero-img.webp" width="440" height="1000">
+            <source type="image/jpg" media="(min-width:1366px)" srcset="img/hero-img.png" width="720" height="1180">
+            <source type="image/png" media="(min-width:768px)" srcset="img/hero-img.png" width="720" height="1180">
+            <img class="hero__image" src="#" alt="Мужчина со штангой" width="320" height="280">
           </picture>
         </div>
       </div>
     </div>
     <div class="about" data-test="about">
-      <div class="about__container container">
-        <h2 class="about__title title">Тренажёрный зал</h2>
-        <span class="about__text">Просторный зал площадью 900 кв/м</span>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
-          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-          есть несколько
-          оборудованных залов для различных видов групповых занятий.</p>
-      </div>
       <picture>
         <source type="image/webp" media="(min-width:1366px)" srcset="img/gym-desktop.webp" width="660" height="400">
-        <source type="image/webp" media="(min-width:768px)" srcset="img/gym-tablet.webp" width="678" height="345">
-        <source type="image/webp" srcset="img/gym-mobile.webp" width="320" height="280">
-        <source type="image/jpg" media="(min-width:1366px)" srcset="img/gym-tablet.jpg" width="660" height="400">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/gym-desktop.webp" width="678" height="345">
+        <source type="image/webp" srcset="img/gym-desktop.webp" width="320" height="280">
+        <source type="image/jpg" media="(min-width:1366px)" srcset="img/gym-desktop.jpg" width="660" height="400">
         <source type="image/jpg" media="(min-width:768px)" srcset="img/gym-desktop.jpg" width="678" height="345">
-        <img class="about__img" src="img/gym-mobile.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
+        <img class="about__img" src="img/gym-desktop.jpg" alt="Тренажерный зал с гантелями, велотренажерами и скамейками"
           width="320" height="280">
       </picture>
+      <div class="about__container container">
+        <h2 class="about__title title">О нас</h2>
+        <span class="about__text">Огромный зал с множеством тренажеров</span>
+        <p>Gym24 - это ведущий фитнес-центр, расположенный недалеко от станции метро "Грушевка" и предлагающий более
+          1500 кв. м
+          площади, отведенной под самые современные тренажеры от ведущих брендов, таких как Hammer Strength, Life
+          Fitness и
+          TechnoGym.</p>
+        <p>Благодаря доступным ценам на абонементы, Gym24 доступен для всех, кто хочет достичь своих фитнес-целей, будь
+          то развитие
+          силы, повышение выносливости или похудение.</p>
+      </div>
       <div class="video">
         <div class="video__wrapper">
           <picture>
@@ -95,7 +106,7 @@
     </div>
     <div class="price" data-test="price" id="price">
       <div class="price__container container">
-        <h2 class="price__title title">Абонементы</h2>
+        <h2 class="price__title title">Абонемент в тренажёрный зал</h2>
         <div class="price__tabs">
           <button class="price__tab-button price__tab-button--active" data-id="0" type="button">1 месяц</button>
           <button class="price__tab-button" data-id="1" type="button">6 месяцев</button>
@@ -524,7 +535,7 @@
       </div>
     </div>
   </div>
-  <div class="form" data-test="form">
+  <div class="form" data-test="form" id="form">
     <div class="big-container">
       <div class="form__container container">
         <form class="main-form" method="post" action="https://echo.htmlacademy.ru/" id="main-form">
@@ -619,6 +630,7 @@
       </div>
     </div>
   </div>
+  <script src="js/vendor/swiper.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 
