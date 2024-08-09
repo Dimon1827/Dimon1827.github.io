@@ -156,30 +156,11 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: -45px;
-      bottom: -56px;
-      width: 325px;
-      height: 384px;
-      z-index: -1;
-      background: image-set(url("../img/tokens.webp") type("image/webp"), url("../img/tokens.jpg") type("image/png"));
-    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 360px);
     gap: 40px;
-
-    &::after {
-      width: 303px;
-      right: 0;
-      bottom: -70px;
-      height: 416px;
-      background: image-set(url("../img/tokens-desktop.webp") type("image/webp"), url("../img/tokens-desktop.png") type("image/png"));
-    }
   }
 }
 
@@ -192,10 +173,11 @@
 .price__item {
   padding: 51px 42px;
   width: 290px;
-  background-color: $base-white;
+  background-color: #222222;
   text-align: center;
   position: relative;
   pointer-events: none;
+  color: $base-white;
 
   &:not(:last-child) {
     margin-bottom: 34px;
@@ -238,7 +220,6 @@
   margin: 0;
   font-weight: 700;
   font-size: 22px;
-  color: $base-dark-blue;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
@@ -256,14 +237,10 @@
 .price__limit {
   font-weight: 300;
   display: block;
-  margin-bottom: 66px;
+  margin-bottom: 150px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 180px;
   }
 }
 
@@ -299,7 +276,6 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
-  color: $base-blue;
   margin: 0;
   margin-bottom: 17px;
   text-align: end;
@@ -313,8 +289,9 @@
     z-index: 2;
     right: -34px;
     top: 20px;
-    background: url("../__spritemap#sprite-ruble-view");
-    background-repeat: no-repeat;
+    mask-image: url("../__spritemap#sprite-ruble-view");
+    background: $base-white;
+    mask-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -344,10 +321,11 @@
 
 .price__button {
   display: block;
-  border: 2px solid $base-dark-blue;
+  border: 2px solid $base-white;
   padding: 25px 10px;
-  color: $base-dark-blue;
+  color: inherit;
   text-decoration: none;
+  background-color: transparent;
   pointer-events: auto;
 
   &:hover,

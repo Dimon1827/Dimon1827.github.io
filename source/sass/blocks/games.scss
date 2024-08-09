@@ -22,7 +22,7 @@
 
 .games__inner {
   padding: 40px;
-  background: $banners-color;
+  background: $base-purple;
   color: $base-white;
 
   @media (min-width: $tablet-width) {
@@ -59,7 +59,6 @@
   line-height: 113%;
   text-transform: uppercase;
   color: $base-white;
-  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 100px;
@@ -75,6 +74,7 @@
 
 .games__date-wrapper {
   width: 56px;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 100px;
@@ -126,14 +126,25 @@
 }
 
 .games__definition {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
     font-size: 40px;
   }
+}
+
+.games__main-title {
+  margin-bottom: 25px;
 }
 
 .games__date {
@@ -150,16 +161,14 @@
   display: grid;
   grid-template-columns: repeat(2, min-content);
   column-gap: 4px;
-  margin-bottom: 5px;
+
+  .games__definition {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     align-items: center;
     column-gap: 6px;
-    margin-bottom: 9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
   }
 }
 

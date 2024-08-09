@@ -1,9 +1,9 @@
 .form {
+  background-color: $base-dark-blue;
   margin: 0;
 }
 
 .form__container {
-  background-color: $base-dark-blue;
   padding: 70px 15px;
 
   @media (min-width: $tablet-width) {
@@ -28,6 +28,7 @@
   color: $base-white;
   text-align: start;
   margin-bottom: 41px;
+  -webkit-text-fill-color: $base-white;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;

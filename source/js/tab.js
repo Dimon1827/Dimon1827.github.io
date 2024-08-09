@@ -1,9 +1,9 @@
 const tabs = document.querySelector('.price__tabs');
 const prices = document.querySelectorAll('.price__value');
 const bigPrices = document.querySelectorAll('.price__big-value');
-const oneMonth = [5000, 1700, 2700];
-const sixMonth = [30000, 10200, 16200];
-const twelveMonth = [60000, 20400, 32400];
+const oneMonth = [4000, 1200, 2000];
+const fiveMonth = [20000, 6000, 10000];
+const tenMonth = [40000, 12000, 20000];
 
 
 const enterNumber = (firstPrices, month) => {
@@ -22,9 +22,9 @@ tabs.addEventListener('click', (evt) => {
   const chosenButton = Number(evt.target.closest('.price__tab-button').dataset.id);
   active.classList.remove('price__tab-button--active');
   if (chosenButton === 1) {
-    addClassButton(sixMonth);
+    addClassButton(fiveMonth);
   } else if (chosenButton === 2) {
-    addClassButton(twelveMonth);
+    addClassButton(tenMonth);
   } else {
     addClassButton(oneMonth);
   }

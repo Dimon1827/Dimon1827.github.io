@@ -21,16 +21,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: start;
     margin-bottom: 49px;
   }
 }
 
 .faq__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+
 }
 
 .faq__tabs-wrapper {
@@ -46,10 +42,6 @@
     margin-bottom: 45px;
   }
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    margin-top: 1px;
-  }
 }
 
 .faq__tab {
@@ -70,10 +62,10 @@
 
   &:active,
   &--active {
-    background: linear-gradient(128deg, #ed0233 18%, #003eb7 100%);
+    background: $base-gradient;
     color: $base-white;
     border: 1px solid transparent;
-    border-image: linear-gradient(128deg, #ed0233 18%, #003eb7 100%);
+    border-image: $base-gradient;
     border-image-slice: 1;
     outline: none;
   }
@@ -88,16 +80,5 @@
     width: 162px;
     padding: 17px 8px;
     font-size: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    width: 260px;
-    padding-top: 20px;
-    padding-bottom: 14px;
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
   }
 }

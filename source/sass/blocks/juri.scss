@@ -63,15 +63,16 @@
 
 .juri__inner {
   opacity: 0;
-  background-color: rgba(16, 38, 84, 0.89);
+  background-color: rgba(69, 18, 174, 0.89);
   box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
   color: $base-white;
   position: absolute;
   left: 0;
-  right: 0;
+  right: 22px;
   bottom: 7px;
   top: 0;
   padding: 46px 41px 51px 42px;
+  border-radius: 15px;
 }
 
 .juri__subtitle {

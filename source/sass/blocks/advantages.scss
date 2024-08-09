@@ -1,0 +1,102 @@
+.advantages {
+  padding: 40px 0;
+}
+
+.advantages__container {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 571px);
+    gap: 86px 117px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 66px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 51px;
+    height: 53px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.advantages__item--first {
+  &::before {
+    background-image: url("../__spritemap#sprite-line-view");
+  }
+}
+
+.advantages__item--second {
+  &::before {
+    background-image: url("../__spritemap#sprite-equipment-view");
+  }
+}
+
+.advantages__item--third {
+  &::before {
+    background-image: url("../__spritemap#sprite-fitness-zone-view");
+  }
+}
+
+.advantages__item--fourth {
+  &::before {
+    background-image: url("../__spritemap#sprite-clock-view");
+    height: 50px;
+  }
+}
+
+.advantages__subtitle {
+  margin: 0;
+  margin-bottom: 14px;
+  color: $base-dark-blue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+
