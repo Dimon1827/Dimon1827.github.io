@@ -1,21 +1,21 @@
 .reviews-button {
   @media (min-width: $tablet-width) {
     &--left {
-      left: 6%;
+      left: 17px;
     }
 
     &--right {
-      right: 6%;
+      right: 17px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--left {
-      left: 298px;
+      left: 50px;
     }
 
     &--right {
-      right: 298px;
+      right: 50px;
     }
   }
 }
