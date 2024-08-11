@@ -22,24 +22,27 @@
       <div class="hero__container container">
         <div class="hero__header-wrapper">
           <img class="hero__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
-          <nav>
-            <ul class="header__list">
-              <li>
-                <a class="header__link" href="#">Услуги</a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#about">О нас</a>
               </li>
-              <li>
-                <a class="header__link" href="#">Абонементы</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#trainer">Тренеры</a>
               </li>
-              <li>
-                <a class="header__link" href="#">Акции</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#price">Абонементы</a>
               </li>
-              <li>
-                <a class="header__link" href="#">Тренеры</a>
-              </li>
-              <li>
-                <a class="header__link" href="#">Расписание</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#contacts">Контакты</a>
               </li>
             </ul>
+            <button class="navigation__toggle js-toggle-button" type="button">
+              <svg class="navigation__image navigation__image--burger" width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-menu"></use>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </nav>
         </div>
         <div class="hero__main-wrapper">
@@ -47,7 +50,7 @@
             <p class="hero__name">Александр Костюков</p>
             <p class="hero__marker">Мастер спорта, 10 лет работает тренером</p>
             <h1 class="hero__title">Бесплатное пробное занятие с тренером</h1>
-            <a class="hero__button button" href="#form">Записаться на прием</a>
+            <a class="hero__button button" href="#main-form">Записаться на прием</a>
           </div>
           <picture>
             <source type="image/webp" media="(min-width:1366px)" srcset="img/hero-img.webp" width="540" height="1000">
@@ -59,7 +62,7 @@
         </div>
       </div>
     </div>
-    <div class="about" data-test="about">
+    <div class="about" id="about">
       <picture>
         <source type="image/webp" media="(min-width:1366px)" srcset="img/gym-desktop.webp" width="660" height="400">
         <source type="image/webp" media="(min-width:768px)" srcset="img/gym-desktop.webp" width="678" height="345">
@@ -163,8 +166,7 @@
         </ul>
       </div>
     </div>
-
-    <div class="juri" data-test="juri">
+    <div class="juri" id="trainer">
       <div class="container">
         <h2 class="juri__title title">Тренеры</h2>
         <div class="juri__container swiper">
@@ -323,7 +325,7 @@
         </div>
       </div>
     </div>
-    <div class="price" data-test="price" id="price">
+    <div class="price" id="price">
       <div class="price__container container">
         <h2 class="price__title title">Абонементы</h2>
         <div class="price__tabs">
@@ -407,7 +409,7 @@
         <div class="accordion">
           <div class="accordion__item">
             <input type="checkbox" id="accordion-1" name="accordion-1" checked>
-            <label for="accordion-1">Какие направления фитнеса представлены в вашем клубе?</label>
+            <label for="accordion-1">Какие направления фитнеса есть в вашем клубе?</label>
             <p>
               В нашем клубе представлены разнообразные направления фитнеса, чтобы удовлетворить потребности каждого:
               силовой тренинг,
@@ -630,53 +632,53 @@
       </div>
     </div>
   </div>
-  <div class="form" data-test="form">
-      <div class="contacts">
-        <div class="contacts__wrapper container">
-          <h2 class="contacts__title title">Контакты</h2>
-          <div class="contacts__container">
-            <div class="contacts__inner contacts__inner--address">
-              <h3 class="contacts__subtitle">Адрес:</h3>
-              <address class="contacts__text">г. Омск, ул. 60 лет Октября, 7</address>
-            </div>
-            <div class="contacts__inner contacts__inner--schedule">
-              <h3 class="contacts__subtitle">График работы:</h3>
-              <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            <div class="contacts__inner contacts__inner--telephone">
-              <h3 class="contacts__subtitle">Телефон:</h3>
-              <a class="contacts__text" href="tel:88005555555">8 800 555-55-55</a>
-            </div>
-            <div class="contacts__inner contacts__inner--email">
-              <h3 class="contacts__subtitle">Email:</h3>
-              <a class="contacts__text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-            </div>
+  <div class="form">
+    <div class="contacts" id="contacts">
+      <div class="contacts__wrapper container">
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__container">
+          <div class="contacts__inner contacts__inner--schedule">
+            <h3 class="contacts__subtitle">График работы:</h3>
+            <p class="contacts__text">Пн-Вс: с 9:00 до 00:00</p>
+          </div>
+          <div class="contacts__inner contacts__inner--email">
+            <h3 class="contacts__subtitle">Email:</h3>
+            <a class="contacts__text" href="mailto:a.drogalov2015@yandex.ru.ru">a.drogalov2015@yandex.ru</a>
+          </div>
+          <div class="contacts__inner contacts__inner--address">
+            <h3 class="contacts__subtitle">Адрес:</h3>
+            <address class="contacts__text">г.Москва, ул.Багратионосовкая, 25</address>
+          </div>
+          <div class="contacts__inner contacts__inner--telephone">
+            <h3 class="contacts__subtitle">Телефон:</h3>
+            <a class="contacts__text" href="tel:89091014238">8 909 101-42-38</a>
           </div>
         </div>
       </div>
-      <div class="form__container container">
-        <form class="main-form" method="post" action="https://echo.htmlacademy.ru/" id="main-form">
-          <h2 class="form__title title">Бесплатная консультация</h2>
-          <div class="form__wrapper">
-            <div class="form__input-box">
-              <label class="form__main-label" for="name">Имя</label>
-              <input class="form__input" type="text" placeholder="Антон" name="name" id="name">
-            </div>
-            <div class="form__input-box">
-              <label class="form__main-label" for="telephone">Телефон</label>
-              <input class="form__input" type="text" placeholder="+7 123 235 49 34" name="telephone" id="telephone">
-            </div>
-            <div class="form__input-box">
-              <label class="form__main-label" for="comment">Комментарий</label>
-              <textarea class="form__input" name="comment" id="comment"></textarea>
-            </div>
+    </div>
+    <div class="form__container container">
+      <form class="main-form" method="post" action="https://echo.htmlacademy.ru/" id="main-form">
+        <h2 class="form__title title">Бесплатная консультация</h2>
+        <div class="form__wrapper">
+          <div class="form__input-box">
+            <label class="form__main-label" for="name">Имя</label>
+            <input class="form__input" type="text" placeholder="Антон" name="name" id="name">
           </div>
-          <div class="form__bottom-text">
-            <p class="form__text">Ответ придет в течении дня</p>
-            <button class="form__button button" type="submit">Отправить</button>
+          <div class="form__input-box">
+            <label class="form__main-label" for="telephone">Телефон</label>
+            <input class="form__input" type="text" placeholder="+7 123 235 49 34" name="telephone" id="telephone">
           </div>
-        </form>
-      </div>
+          <div class="form__input-box">
+            <label class="form__main-label" for="comment">Комментарий</label>
+            <textarea class="form__input" name="comment" id="comment"></textarea>
+          </div>
+        </div>
+        <div class="form__bottom-text">
+          <p class="form__text">Ответ придет в течении дня</p>
+          <button class="form__button button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <div class="footer" data-test="footer">
@@ -685,28 +687,25 @@
         <img class="footer__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
         <ul class="footer__list">
           <li>
-            <a class="footer__link" href="#">Услуги</a>
+            <a class="footer__link" href="#about">О нас</a>
           </li>
           <li>
-            <a class="footer__link" href="#">Абонементы</a>
+            <a class="footer__link" href="#trainer">Тренеры</a>
           </li>
           <li>
-            <a class="footer__link" href="#">Акции</a>
+            <a class="footer__link" href="#price">Абонементы</a>
           </li>
           <li>
-            <a class="footer__link" href="#">Тренеры</a>
-          </li>
-          <li>
-            <a class="footer__link" href="#">Расписание</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <ul class="social">
           <li>
-            <a class="social__link" href="https://vk.com/id361320319">
+            <a class="social__link" href="https://www.reddit.com">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-vk"></use>
+                <use href="/__spritemap#sprite-reddit"></use>
               </svg>
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="visually-hidden">Reddit</span>
             </a>
           </li>
           <li>
@@ -718,11 +717,11 @@
             </a>
           </li>
           <li>
-            <a class="social__link" href="https://www.reddit.com">
+            <a class="social__link" href="https://vk.com/id361320319">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-reddit"></use>
+                <use href="/__spritemap#sprite-vk"></use>
               </svg>
-              <span class="visually-hidden">Reddit</span>
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
         </ul>
