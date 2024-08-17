@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="manifest" href="./assets/manifest-i9BPheos.webmanifest">
-  <link rel="preload" href="./assets/robotoCondensed-regular-CICBqUsB.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./assets/robotoCondensed-light-D4WzUVKV.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./assets/robotoCondensed-bold-i8TRCJuH.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./assets/alumniSans-semiBold-BeXCDhQ5.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./assets/alumniSans-extraBold-gM3buHUY.woff2" as="font" crossorigin="anonymous">
-  <link rel="icon" href="./assets/favicon-FdIVr40f.ico">
-  <script type="module" crossorigin src="./assets/index-ZnZUkEC0.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D7rHnELX.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="sass/vendor/swiper.css">
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/robotoCondensed-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumniSans-semiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumniSans-extraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
@@ -21,7 +21,7 @@
     <div class="hero" data-test="hero">
       <div class="hero__container container">
         <div class="hero__header-wrapper">
-          <img class="hero__logo" src="./assets/logo-CXtB8FB2.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
+          <img class="hero__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -39,7 +39,7 @@
             </ul>
             <button class="navigation__toggle js-toggle-button" type="button">
               <svg class="navigation__image navigation__image--burger" width="16" height="16" aria-hidden="true" focusable="false">
-                <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-menu"></use>
+                <use href="/__spritemap#sprite-menu"></use>
               </svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -53,10 +53,10 @@
             <a class="hero__button button" href="#main-form">Записаться на прием</a>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width:1366px)" srcset="./assets/hero-img-Bp9C4ELd.webp" width="540" height="1000">
-            <source type="image/webp" media="(min-width:768px)" srcset="./assets/hero-img-Bp9C4ELd.webp" width="440" height="1000">
-            <source type="image/jpg" media="(min-width:1366px)" srcset="./assets/hero-img-Lc6KwrnG.png" width="720" height="1180">
-            <source type="image/png" media="(min-width:768px)" srcset="./assets/hero-img-Lc6KwrnG.png" width="720" height="1180">
+            <source type="image/webp" media="(min-width:1366px)" srcset="img/hero-img.webp" width="540" height="1000">
+            <source type="image/webp" media="(min-width:768px)" srcset="img/hero-img.webp" width="440" height="1000">
+            <source type="image/jpg" media="(min-width:1366px)" srcset="img/hero-img.png" width="720" height="1180">
+            <source type="image/png" media="(min-width:768px)" srcset="img/hero-img.png" width="720" height="1180">
             <img class="hero__image" src="#" alt="Мужчина со штангой" width="320" height="280">
           </picture>
         </div>
@@ -64,12 +64,12 @@
     </div>
     <div class="about" id="about">
       <picture>
-        <source type="image/webp" media="(min-width:1366px)" srcset="./assets/gym-desktop-BZSgsJwy.webp" width="660" height="400">
-        <source type="image/webp" media="(min-width:768px)" srcset="./assets/gym-desktop-BZSgsJwy.webp" width="678" height="345">
-        <source type="image/webp" srcset="./assets/gym-desktop-BZSgsJwy.webp" width="320" height="280">
-        <source type="image/jpg" media="(min-width:1366px)" srcset="./assets/gym-desktop-BpgGzkrh.jpg" width="660" height="400">
-        <source type="image/jpg" media="(min-width:768px)" srcset="./assets/gym-desktop-BpgGzkrh.jpg" width="678" height="345">
-        <img class="about__img" src="./assets/gym-desktop-BpgGzkrh.jpg"
+        <source type="image/webp" media="(min-width:1366px)" srcset="img/gym-desktop.webp" width="660" height="400">
+        <source type="image/webp" media="(min-width:768px)" srcset="img/gym-desktop.webp" width="678" height="345">
+        <source type="image/webp" srcset="img/gym-desktop.webp" width="320" height="280">
+        <source type="image/jpg" media="(min-width:1366px)" srcset="img/gym-desktop.jpg" width="660" height="400">
+        <source type="image/jpg" media="(min-width:768px)" srcset="img/gym-desktop.jpg" width="678" height="345">
+        <img class="about__img" src="img/gym-desktop.jpg"
           alt="Тренажерный зал с гантелями, велотренажерами и скамейками" width="320" height="280">
       </picture>
       <div class="about__container container">
@@ -87,16 +87,16 @@
       <div class="video">
         <div class="video__wrapper">
           <picture>
-            <source type="image/webp" media="(min-width:1366px)" srcset="./assets/video-desktop-DBaLPCDB.webp" width="360"
+            <source type="image/webp" media="(min-width:1366px)" srcset="img/video-desktop.webp" width="360"
               height="230">
-            <source type="image/webp" media="(min-width:768px)" srcset="./assets/video-tablet-CJ2eO0YW.webp" width="270" height="170">
-            <source type="image/webp" srcset="./assets/video-jAF3ARe4.webp" width="320" height="170">
-            <source type="image/jpg" media="(min-width:1366px)" srcset="./assets/video-desktop-NsoF7rHp.jpg" width="360" height="230">
-            <source type="image/jpg" media="(min-width:768px)" srcset="./assets/video-tablet-oUx6ccx3.jpg" width="270" height="170">
-            <img class="video__image" src="./assets/video-Bjln2TKz.jpg"
+            <source type="image/webp" media="(min-width:768px)" srcset="img/video-tablet.webp" width="270" height="170">
+            <source type="image/webp" srcset="img/video.webp" width="320" height="170">
+            <source type="image/jpg" media="(min-width:1366px)" srcset="img/video-desktop.jpg" width="360" height="230">
+            <source type="image/jpg" media="(min-width:768px)" srcset="img/video-tablet.jpg" width="270" height="170">
+            <img class="video__image" src="img/video.jpg"
               alt="Тренажерный зал с гантелями, велотренажерами и скамейками" width="320" height="170">
           </picture>
-          <iframe class="video__frame" width="320" height="170" src="https://www.youtube.com/embed/jPOCxzGCY6g"
+          <iframe class="video__frame" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw"
             title="YouTube video player" loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
@@ -112,12 +112,12 @@
       <h2 class="title games__main-title">Соревнования</h2>
       <div class="games__wrapper container">
         <picture>
-          <source type="image/webp" media="(min-width:1366px)" srcset="./assets/run-desktop-L3LtQUm3.webp" width="660" height="501">
-          <source type="image/webp" media="(min-width:768px)" srcset="./assets/run-tablet-D7WiG3mr.webp" width="378" height="348">
-          <source type="image/webp" srcset="./assets/run-mobile-Days82oG.webp" width="290" height="290">
-          <source type="image/jpg" media="(min-width:1366px)" srcset="./assets/run-desktop-DL21zUe2.jpg" width="660" height="501">
-          <source type="image/jpg" media="(min-width:768px)" srcset="./assets/run-tablet-7CSl7L-M.jpg" width="378" height="348">
-          <img class="games__image" src="./assets/run-mobile-CBERB4F5.jpg" alt="соревнования по бегу" width="290" height="290">
+          <source type="image/webp" media="(min-width:1366px)" srcset="img/run-desktop.webp" width="660" height="501">
+          <source type="image/webp" media="(min-width:768px)" srcset="img/run-tablet.webp" width="378" height="348">
+          <source type="image/webp" srcset="img/run-mobile.webp" width="290" height="290">
+          <source type="image/jpg" media="(min-width:1366px)" srcset="img/run-desktop.jpg" width="660" height="501">
+          <source type="image/jpg" media="(min-width:768px)" srcset="img/run-tablet.jpg" width="378" height="348">
+          <img class="games__image" src="img/run-mobile.jpg" alt="соревнования по бегу" width="290" height="290">
         </picture>
         <div class="games__inner">
           <div class="games__title-wrapper">
@@ -174,8 +174,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-DhD1P1K7.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-BiaFbo1l.png" alt="Виктория Шурпик" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo.png" alt="Виктория Шурпик" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Виктория Шурпик</h3>
@@ -191,7 +191,7 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-1-CCcuY_Xp.webp" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-1.webp" width="238" height="297">
                   <img class="juri__image" src="img/coach-photo-1.jpg" alt="Элизабет Лавриненкова" width="238"
                     height="297">
                 </picture>
@@ -209,8 +209,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-2-CX_r9xA3.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-2-DXfvUt4h.png" alt="Иван Гладикин" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-2.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo-2.png" alt="Иван Гладикин" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Иван Гладикин</h3>
@@ -226,8 +226,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-3-RqJtm6yu.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-3-JyKcisfk.png" alt="Евгений Гурков" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-3.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo-3.png" alt="Евгений Гурков" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Евгений Гурков</h3>
@@ -243,8 +243,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-DhD1P1K7.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-BiaFbo1l.png" alt="Виктория Шурпик" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo.png" alt="Виктория Шурпик" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Виктория Шурпик</h3>
@@ -260,7 +260,7 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-1-CCcuY_Xp.webp" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-1.webp" width="238" height="297">
                   <img class="juri__image" src="img/coach-photo-1.jpg" alt="Элизабет Лавриненкова" width="238"
                     height="297">
                 </picture>
@@ -278,8 +278,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-2-CX_r9xA3.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-2-DXfvUt4h.png" alt="Иван Гладикин" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-2.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo-2.png" alt="Иван Гладикин" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Иван Гладикин</h3>
@@ -295,8 +295,8 @@
             <div class="juri__slide swiper-slide">
               <div class="juri__wrapper-image" tabindex="0">
                 <picture>
-                  <source type="image/webp" srcset="./assets/coach-photo-3-RqJtm6yu.webp" width="238" height="297">
-                  <img class="juri__image" src="./assets/coach-photo-3-JyKcisfk.png" alt="Евгений Гурков" width="238" height="297">
+                  <source type="image/webp" srcset="img/coach-photo-3.webp" width="238" height="297">
+                  <img class="juri__image" src="img/coach-photo-3.png" alt="Евгений Гурков" width="238" height="297">
                 </picture>
                 <div class="juri__inner">
                   <h3 class="juri__subtitle">Евгений Гурков</h3>
@@ -313,13 +313,13 @@
         </div>
         <div class="swiper-button juri-button juri-button--left">
           <svg class="juri-button__image" width="18" height="33" aria-hidden="true" focusable="false">
-            <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-left-swiper-button"></use>
+            <use href="/__spritemap#sprite-left-swiper-button"></use>
           </svg>
           <span class="visually-hidden">Левая стрелка</span>
         </div>
         <div class="swiper-button juri-button juri-button--right">
           <svg class="juri-button__image" width="18" height="33" aria-hidden="true" focusable="false">
-            <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-right-swiper-button"></use>
+            <use href="/__spritemap#sprite-right-swiper-button"></use>
           </svg>
           <span class="visually-hidden">Правая стрелка</span>
         </div>
@@ -375,13 +375,13 @@
           </div>
           <div class="offers__wrapper">
             <picture>
-              <source type="image/webp" media="(min-width:1366px)" srcset="./assets/boy-desktop-G_5QEJ7N.webp" width="280"
+              <source type="image/webp" media="(min-width:1366px)" srcset="img/boy-desktop.webp" width="280"
                 height="461">
-              <source type="image/webp" media="(min-width:768px)" srcset="./assets/boy-tablet-CJALB0nb.webp" width="400" height="462">
-              <source type="image/webp" srcset="./assets/boy-mobile-oRchLOZ9.webp" width="320" height="360">
-              <source type="image/jpg" media="(min-width:1366px)" srcset="./assets/boy-desktop-CNEDzQrw.jpg" width="280" height="461">
-              <source type="image/jpg" media="(min-width:768px)" srcset="./assets/boy-tablet-IJYM8q9u.jpg" width="400" height="462">
-              <img class="offers__img" src="./assets/boy-mobile-CtPHLi2f.jpg" alt="Мужчина в тренажерном зале" width="320"
+              <source type="image/webp" media="(min-width:768px)" srcset="img/boy-tablet.webp" width="400" height="462">
+              <source type="image/webp" srcset="img/boy-mobile.webp" width="320" height="360">
+              <source type="image/jpg" media="(min-width:1366px)" srcset="img/boy-desktop.jpg" width="280" height="461">
+              <source type="image/jpg" media="(min-width:768px)" srcset="img/boy-tablet.jpg" width="400" height="462">
+              <img class="offers__img" src="img/boy-mobile.jpg" alt="Мужчина в тренажерном зале" width="320"
                 height="360">
             </picture>
             <div class="offers__inner">
@@ -465,16 +465,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-1-DI5NU-yZ.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-1.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-1-DI5NU-yZ.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-1.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-1-CxuXsL0i.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-1-WX3z99HO.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-1.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-1.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-1-WX3z99HO.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-1.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-1-BPeQ1FFI.png" alt="Артур" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-1.png" alt="Артур" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Артур</h3>
@@ -490,16 +490,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-2-UHrvCQPC.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-2.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-2-UHrvCQPC.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-2.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-2-4iNlPOUI.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-2-IwN-nto-.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-2.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-2.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-2-IwN-nto-.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-2.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-2-DjYuxwLs.png" alt="Катя" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-2.png" alt="Катя" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Катя</h3>
@@ -514,16 +514,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-3-DG-4abHT.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-3.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-3-DG-4abHT.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-3.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-3-ByKRldIL.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-3-BjoABfsX.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-3.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-3.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-3-BjoABfsX.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-3.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-3-DVfShs6S.png" alt="Никита" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-3.png" alt="Никита" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Никита</h3>
@@ -540,16 +540,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-1-DI5NU-yZ.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-1.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-1-DI5NU-yZ.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-1.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-1-CxuXsL0i.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-1-WX3z99HO.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-1.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-1.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-1-WX3z99HO.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-1.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-1-BPeQ1FFI.png" alt="Артур" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-1.png" alt="Артур" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Артур</h3>
@@ -567,16 +567,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-2-UHrvCQPC.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-2.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-2-UHrvCQPC.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-2.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-2-4iNlPOUI.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-2-IwN-nto-.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-2.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-2.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-2-IwN-nto-.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-2.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-2-DjYuxwLs.png" alt="Катя" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-2.png" alt="Катя" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Катя</h3>
@@ -592,16 +592,16 @@
           <div class="reviews__card swiper-slide">
             <div class="reviews__container-text">
               <picture>
-                <source type="image/webp" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-3-DG-4abHT.webp" width="80"
+                <source type="image/webp" media="(min-width:1366px)" srcset="img/review-photo-tablet-3.webp" width="80"
                   height="80">
-                <source type="image/webp" media="(min-width:768px)" srcset="./assets/review-photo-tablet-3-DG-4abHT.webp" width="80"
+                <source type="image/webp" media="(min-width:768px)" srcset="img/review-photo-tablet-3.webp" width="80"
                   height="80">
-                <source type="image/webp" srcset="./assets/review-photo-mobile-3-ByKRldIL.webp" width="68" height="68">
-                <source type="image/png" media="(min-width:1366px)" srcset="./assets/review-photo-tablet-3-BjoABfsX.png" width="80"
+                <source type="image/webp" srcset="img/review-photo-mobile-3.webp" width="68" height="68">
+                <source type="image/png" media="(min-width:1366px)" srcset="img/review-photo-tablet-3.png" width="80"
                   height="80">
-                <source type="image/png" media="(min-width:768px)" srcset="./assets/review-photo-tablet-3-BjoABfsX.png" width="80"
+                <source type="image/png" media="(min-width:768px)" srcset="img/review-photo-tablet-3.png" width="80"
                   height="80">
-                <img class="reviews__image" src="./assets/review-photo-mobile-3-DVfShs6S.png" alt="Никита" width="68" height="68">
+                <img class="reviews__image" src="img/review-photo-mobile-3.png" alt="Никита" width="68" height="68">
               </picture>
               <div class="reviews__wrapper-text">
                 <h3>Никита</h3>
@@ -620,13 +620,13 @@
       </div>
       <div class="swiper-button reviews-button reviews-button--left">
         <svg class="reviews-button__image" width="18" height="33" aria-hidden="true" focusable="false">
-          <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-left-swiper-button"></use>
+          <use href="/__spritemap#sprite-left-swiper-button"></use>
         </svg>
         <span class="visually-hidden">Левая стрелка</span>
       </div>
       <div class="swiper-button reviews-button reviews-button--right">
         <svg class="reviews-button__image" width="18" height="33" aria-hidden="true" focusable="false">
-          <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-right-swiper-button"></use>
+          <use href="/__spritemap#sprite-right-swiper-button"></use>
         </svg>
         <span class="visually-hidden">Правая стрелка</span>
       </div>
@@ -684,7 +684,7 @@
   <div class="footer" data-test="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <img class="footer__logo" src="./assets/logo-CXtB8FB2.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
+        <img class="footer__logo" src="img/logo.svg" width="100" height="20" alt="Логогит Фитнес центра SUPERGYM">
         <ul class="footer__list">
           <li>
             <a class="footer__link" href="#about">О нас</a>
@@ -703,7 +703,7 @@
           <li>
             <a class="social__link" href="https://www.reddit.com">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
-                <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-reddit"></use>
+                <use href="/__spritemap#sprite-reddit"></use>
               </svg>
               <span class="visually-hidden">Reddit</span>
             </a>
@@ -711,7 +711,7 @@
           <li>
             <a class="social__link" href="https://ok.ru">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
-                <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-ok"></use>
+                <use href="/__spritemap#sprite-ok"></use>
               </svg>
               <span class="visually-hidden">Одноклассники</span>
             </a>
@@ -719,7 +719,7 @@
           <li>
             <a class="social__link" href="https://vk.com/id361320319">
               <svg class="social__image" width="25" height="25" aria-hidden="true" focusable="false">
-                <use href="./assets/spritemap.74e38b9a-CV5paB0i.svg#sprite-vk"></use>
+                <use href="/__spritemap#sprite-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
@@ -729,6 +729,7 @@
     </div>
   </div>
   <script src="js/vendor/swiper.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
