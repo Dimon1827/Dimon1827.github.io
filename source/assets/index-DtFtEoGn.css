@@ -979,7 +979,7 @@ template {
   font-family: Roboto-Condensed;
   font-weight: 300;
   font-style: normal;
-  src: url(../fonts/robotoCondensed-light-D4WzUVKV.woff2) format("woff2");
+  src: url(../assets/robotoCondensed-light-D4WzUVKV.woff2) format("woff2");
   font-display: swap
 }
 
@@ -987,7 +987,7 @@ template {
   font-family: Roboto-Condensed;
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/robotoCondensed-regular-CICBqUsB.woff2) format("woff2");
+  src: url(../assets/robotoCondensed-regular-CICBqUsB.woff2) format("woff2");
   font-display: swap
 }
 
@@ -995,7 +995,7 @@ template {
   font-family: Roboto-Condensed;
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/robotoCondensed-bold-i8TRCJuH.woff2) format("woff2");
+  src: url(../assets/robotoCondensed-bold-i8TRCJuH.woff2) format("woff2");
   font-display: swap
 }
 
@@ -1003,7 +1003,7 @@ template {
   font-family: Alumni-Sans;
   font-weight: 600;
   font-style: normal;
-  src: url(../fonts/alumniSans-semiBold-BeXCDhQ5.woff2) format("woff2");
+  src: url(../assets/alumniSans-semiBold-BeXCDhQ5.woff2) format("woff2");
   font-display: swap
 }
 
@@ -1011,7 +1011,7 @@ template {
   font-family: Alumni-Sans;
   font-weight: 800;
   font-style: normal;
-  src: url(../fonts/alumniSans-extraBold-gM3buHUY.woff2) format("woff2");
+  src: url(../assets/alumniSans-extraBold-gM3buHUY.woff2) format("woff2");
   font-display: swap
 }
 
